@@ -33,7 +33,7 @@ Run the installer and accept all the defaults. You'll only need one Git command,
 
 **Step 2. Download this repo.** Copy and paste this line into the terminal, then press Enter:
 
-    git clone {{REPO-URL}}
+    git clone https://github.com/jdpolasky/chief-of-staff-2
 
 You'll see lines of text scroll by. When the cursor stops, the download is done. The project is now in a folder on your computer, usually inside your home folder.
 
