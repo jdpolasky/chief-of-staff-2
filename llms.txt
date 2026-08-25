@@ -1,0 +1,17 @@
+# Chief of Staff v2
+
+> A Chief of Staff that lives in an Obsidian vault as plain markdown, driven by whatever AI model you're paying for this year. Built as an ADHD prosthetic by a non-coder with ADHD, for non-coders with ADHD.
+
+## Docs
+
+- [OVERVIEW.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/OVERVIEW.md): One-page summary of the whole system, written for an AI agent to fetch once.
+- [README.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/README.md): Project description and map, including a plain-language Q&A section.
+- [ARCHITECTURE.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/ARCHITECTURE.md): Full account of what v1 got right, how it collapsed, and how v2 is built.
+- [SETUP-HUMANS.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/SETUP-HUMANS.md): Install guide written for a person with no coding background.
+- [SETUP-AI.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/SETUP-AI.md): The same install, written for an AI agent to execute.
+- [docs/laws.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/docs/laws.md): Thirteen laws governing the system, each with the mistake that produced it.
+- [docs/anatomy.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/docs/anatomy.md): The four-part anatomy every chair in the C-Suite follows.
+
+## Optional
+
+- [ai-chief-of-staff](https://github.com/jdpolasky/ai-chief-of-staff): Version one of this system. Superseded by this repo, kept public because it still works and still stands on its own.
