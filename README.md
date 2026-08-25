@@ -17,7 +17,7 @@ An AI assistant that keeps track of your calendar, your open commitments, and yo
 People with ADHD, or anyone whose reasoning is fine but whose working memory and executive function aren't. If you lose a task the moment it leaves the screen, if starting is harder than doing, if coming back after time away costs you more than the time away did, this was built for you. It works fine without ADHD too, it was just designed for a harder case than most.
 
 **What does it run on?**
-Any current-generation agentic AI that can read and write files on your computer, Claude Code is the reference case, and any markdown editor, Obsidian is the one this repo is built around but it doesn't require it. The AI is a thin, swappable adapter. The system itself is a folder of plain text files you could open in Notepad.
+Any current-generation agentic AI that can read and write files on your computer (Claude Code is the reference case) and any markdown editor (Obsidian is the one this repo is built around, but it doesn't require it). The AI is a thin, swappable adapter. The system itself is a folder of plain text files you could open in Notepad.
 
 **How is this different from a to-do app or a Notion template?**
 A to-do app holds tasks. This holds context, who you are, how you work, and what's actually going on in your life right now, and an AI uses that context to reason about what you need instead of just displaying a list. There's no database, no hosted service, and nothing that can be deprecated out from under you. It's markdown, on your own disk.

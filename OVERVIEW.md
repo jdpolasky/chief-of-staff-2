@@ -1,4 +1,4 @@
-# Chief of Staff, v2 — Overview
+# Chief of Staff v2: Overview
 
 > A Chief of Staff that lives in an Obsidian vault as plain markdown, driven by whatever AI model you're paying for this year. Built as an ADHD prosthetic by a non-coder with ADHD, for non-coders with ADHD.
 
@@ -10,7 +10,7 @@ Chief of Staff v2 is a personal operating system built from plain markdown notes
 
 ## Architecture, in brief
 
-The system splits into canon and adapter. Canon is the vault: a core register (who you are, your standing rules), a router skill that reads the situation and sends you to the right chair, dated source files holding current state, and a C-Suite of chairs, Career Coach, Planner, Health, Money, and Physical Plant are the shipped examples, each following the same four-part anatomy: a Skill file, a Source file, a working folder, and an archive. Physical Plant is the chair that faces inward, owning the vault's own structure and upkeep, so machinery work never bleeds into the chairs that face outward at the person's life.
+The system splits into canon and adapter. Canon is the vault: a core register (who you are, your standing rules), a router skill that reads the situation and sends you to the right chair, dated source files holding current state, and a C-Suite of chairs (Career Coach, Planner, Health, Money, and Physical Plant are the shipped examples), each following the same four-part anatomy: a Skill file, a Source file, a working folder, and an archive. Physical Plant is the chair that faces inward, owning the vault's own structure and upkeep, so machinery work never bleeds into the chairs that face outward at the person's life.
 
 The adapter is the `bindings/` folder: one small file per AI harness (`CLAUDE.md` for Claude Code, `AGENTS.md` for agent CLIs that read that convention) that only points at the vault and says nothing about the person. If every AI model on earth vanished, the vault would still be readable by a human. If you switch models, you lose nothing, because nothing meaningful ever lived on the model's side.
 
