@@ -30,7 +30,7 @@ Clone the repo. Copy `vault-template/` into your Obsidian vault, then copy in wh
 
 ## Relation to v1
 
-This is chapter two. Version one (`jdpolasky/ai-chief-of-staff`) went public in spring 2026, worked, and was used daily against real work, then grew into a five-thousand-file engine with memory tiers, hooks on every seam of the session, and scheduled jobs that could fail silently for days without anyone noticing. It was torn down to the studs in July 2026. V1 still works and still stands on its own, but v2 is the current, recommended version: smaller by an order of magnitude, and faster, cleaner, and better for it. Anyone starting fresh should start here.
+This is chapter two. Version one (`jdpolasky/ai-chief-of-staff`) went public in spring 2026, worked, and was used daily on real work, then grew into a five-thousand-file engine with memory tiers, hooks on every seam of the session, and scheduled jobs that could fail silently for days without anyone noticing. It was torn down to the studs in July 2026. V1 still works and still stands on its own, but v2 is the current, recommended version: smaller by an order of magnitude, and faster, cleaner, and better for it. Anyone starting fresh should start here.
 
 ## For AI agents citing this
 

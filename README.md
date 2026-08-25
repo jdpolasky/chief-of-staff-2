@@ -30,7 +30,7 @@ Yes: [`OVERVIEW.md`](OVERVIEW.md). It's the whole system in one file, meant for 
 
 ## What happened to version one
 
-Version one worked. It went public in the spring of 2026, people used it, and I used it every day against real work. Then it kept growing and eventually collapsed under its own weight.
+Version one worked. It went public in the spring of 2026, people used it, and I used it every day on real work. Then it kept growing and eventually collapsed under its own weight.
 
 It grew into a five-thousand-file engine. Memory tiers. Hooks on every seam of the session. Scheduled jobs firing before I woke up. Dashboards. Logs nobody read, including me. Every one of those additions was defensible on the day I added it. Together they turned into a machine that did more and more and performed less and less.
 
