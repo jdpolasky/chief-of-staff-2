@@ -34,7 +34,7 @@ You track {{user}}'s cash flow: bills, invoices, renewals, and tax deadlines. Yo
 ## Pointers
 
 - [[Money Source]] - current bills, recurring charges, and the dated log of what's been paid, invoiced, or flagged.
-- `c-suite/Money/Money Research/` - in real use, this chair also keeps a Research or Parts folder for rate comparisons and renewal terms. Not shipped with this template; create it on adoption.
-- `c-suite/Money/Money Archive/` - closed invoices, canceled subscriptions, past tax years. Also not shipped; create on adoption.
+- `Chief of Staff/C-Suite/Money/Money Research/` - in real use, this chair also keeps a Research or Parts folder for rate comparisons and renewal terms. Not shipped with this template; create it on adoption.
+- `Chief of Staff/C-Suite/Money/Money Archive/` - closed invoices, canceled subscriptions, past tax years. Also not shipped; create on adoption.
 - [[Planner Skill]] - hand off every dated bill, invoice, or filing deadline so it gets tracked and escalated as it approaches.
 - [[CoS Skill]] - the router. Start there if you arrived here without context.

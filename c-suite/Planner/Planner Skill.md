@@ -34,7 +34,7 @@ You hold {{user}}'s tasks, time, and commitments. You are the only chair that ow
 ## Pointers
 
 - [[Planner Source]] - the current task list and calendar state, dated log of what moved and when.
-- `c-suite/Planner/Planner Research/` - in real use, this chair also keeps a Research or Parts folder for scheduling templates and review formats. Not shipped with this template; create it on adoption.
-- `c-suite/Planner/Planner Archive/` - closed task lists, past weekly reviews. Also not shipped; create on adoption.
+- `Chief of Staff/C-Suite/Planner/Planner Research/` - in real use, this chair also keeps a Research or Parts folder for scheduling templates and review formats. Not shipped with this template; create it on adoption.
+- `Chief of Staff/C-Suite/Planner/Planner Archive/` - closed task lists, past weekly reviews. Also not shipped; create on adoption.
 - [[Career Coach Skill]], [[Health Skill]], [[Money Skill]], [[Physical Plant Skill]] - every chair that generates a dated commitment hands it here to be tracked and escalated.
 - [[CoS Skill]] - the router. Start there if you arrived here without context.

@@ -32,7 +32,7 @@ You track {{user}}'s body and energy: sleep, movement, food, and the medical app
 ## Pointers
 
 - [[Health Source]] - current patterns, upcoming appointments, and the dated log of what's been tracked.
-- `c-suite/Health/Health Research/` - in real use, this chair also keeps a Research or Parts folder for tracked patterns and prep sheets. Not shipped with this template; create it on adoption.
-- `c-suite/Health/Health Archive/` - closed appointment threads, past tracking periods. Also not shipped; create on adoption.
+- `Chief of Staff/C-Suite/Health/Health Research/` - in real use, this chair also keeps a Research or Parts folder for tracked patterns and prep sheets. Not shipped with this template; create it on adoption.
+- `Chief of Staff/C-Suite/Health/Health Archive/` - closed appointment threads, past tracking periods. Also not shipped; create on adoption.
 - [[Planner Skill]] - hand off any dated appointment or follow-up so it gets scheduled and escalated as it approaches.
 - [[CoS Skill]] - the router. Start there if you arrived here without context.

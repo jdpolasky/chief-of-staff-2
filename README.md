@@ -4,7 +4,7 @@
 
 > **Have an AI walk you through it.** If you have a current-generation AI assistant in any form, paste this whole README into it and say "walk me through this." It reads back to you in plain English and helps when something breaks. The doc was written to work both ways.
 
-> **Connecting Obsidian to your AI:** the wiring guide is [`obsidian-setup.md`](obsidian-setup.md). It works with Claude Code, Codex, Gemini, and any other MCP-capable agent.
+> **Connecting Obsidian to your AI:** the wiring guide is [`obsidian-setup.md`](obsidian-setup.md). It works with Claude Code, Codex, Gemini, and any other MCP-capable agent. Wondering whether Notion could do this instead? Read [`docs/notion-vs-obsidian.md`](docs/notion-vs-obsidian.md).
 
 A Chief of Staff that lives in an Obsidian vault as plain markdown, driven by whatever AI model you happen to be paying for this year. Built as an ADHD prosthetic by a non-coder with ADHD, for non-coders with ADHD.
 
@@ -69,11 +69,14 @@ If you don't have ADHD, it still works. It was just designed for harder cases th
 - [`SETUP-HUMANS.md`](SETUP-HUMANS.md). The install guide for a person. Plain English, assumes you have never used a terminal, walks you from nothing to a working vault.
 - [`SETUP-AI.md`](SETUP-AI.md). The same install, written for the AI to execute. Point your assistant at this file and it builds the thing while you watch.
 - [`obsidian-setup.md`](obsidian-setup.md). How to connect your vault to an AI agent over MCP. Covers Claude Code, Codex, Gemini, Cursor, and any other MCP client.
+- [`docs/notion-vs-obsidian.md`](docs/notion-vs-obsidian.md). Short read on why this runs on Obsidian rather than Notion.
+- [`docs/notion-vs-obsidian-deep.md`](docs/notion-vs-obsidian-deep.md). The full analysis, with pricing and live tests.
 - [`ARCHITECTURE.md`](ARCHITECTURE.md). The bones. What v1 got right, how it died, what replaced it, and why every piece is shaped the way it is. Read this if you want the system explained before you commit to it.
 - [`vault-template/`](vault-template). The starter vault. The core register, the router skill, the source sheet, and the three universal skills.
 - [`c-suite/`](c-suite). The chairs. Career Coach, Planner, Health, Money, Physical Plant. Each ships as a Skill and a Source; the full four-part anatomy is in [`docs/anatomy.md`](docs/anatomy.md).
 - [`bindings/`](bindings). Thin adapters for whatever AI harness you run. `CLAUDE.md` for Claude Code, `AGENTS.md` for the other CLI agents, notes for everything else.
 - [`docs/laws.md`](docs/laws.md). Thirteen laws that govern the machinery, each one with the mistake that produced it.
+- [`CHANGELOG.md`](CHANGELOG.md). What changed and when.
 
 Install steps are in the setup files, not here. This README is the description and the map.
 

@@ -33,7 +33,7 @@ You are {{user}}'s head coach for their working life. You hold the big picture: 
 ## Pointers
 
 - [[Career Coach Source]] - current strategy, active targets, and the dated log of what's moved.
-- `c-suite/Career Coach/Career Coach Research/` - in real use, this chair also keeps a Research or Parts folder for job leads, market notes, and draft material. Not shipped with this template; create it when you adopt the chair.
-- `c-suite/Career Coach/Career Coach Archive/` - closed searches, retired positioning, old drafts. Also not shipped; create on adoption.
+- `Chief of Staff/C-Suite/Career Coach/Career Coach Research/` - in real use, this chair also keeps a Research or Parts folder for job leads, market notes, and draft material. Not shipped with this template; create it when you adopt the chair.
+- `Chief of Staff/C-Suite/Career Coach/Career Coach Archive/` - closed searches, retired positioning, old drafts. Also not shipped; create on adoption.
 - [[Planner Skill]] - hand off anything with a date attached (an application deadline, an interview time) so it gets tracked and escalated there.
 - [[CoS Skill]] - the router. Start there if you arrived here without context.

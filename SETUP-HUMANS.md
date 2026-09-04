@@ -1,5 +1,7 @@
 # Setup guide (for humans)
 
+*Last verified September 2026.*
+
 > **Note:** This is written for people who have never opened a terminal or installed a code project. If you've done that before, skim ahead. Nothing here will gatekeep you out.
 
 > **Have your AI walk you through it.** If you already have any current-generation agentic AI (paid tier), paste this whole file into a conversation with it and say "walk me through this." It'll read it back to you in plain English and coach you through each step.
@@ -42,7 +44,7 @@ You'll see lines of text scroll by. When the cursor stops, the download is done.
 - `vault-template/`, a `Chief of Staff` folder with the core files the system needs.
 - `c-suite/`, a set of example chairs (Career Coach, Planner, Health, Money, Physical Plant) you can add on top.
 
-Copy the whole contents of `vault-template/` into your Obsidian vault folder. Then look through `c-suite/` and copy in only the chairs you actually want. You don't have to use all five, and you can add more later.
+Copy the whole contents of `vault-template/` into your Obsidian vault folder. Then look through `c-suite/` and copy in only the chairs you actually want. You don't have to use all five, and you can add more later. Chairs live in a folder named `C-Suite` inside `Chief of Staff`, so an adopted chair ends up at `Chief of Staff/C-Suite/Career Coach/`. Create the `C-Suite` folder if it isn't there yet.
 
 **Step 4. Copy in the binding file for your AI.** Inside the downloaded folder there's a `bindings/` folder with one small file per AI harness:
 

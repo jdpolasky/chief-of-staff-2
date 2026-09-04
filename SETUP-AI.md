@@ -30,7 +30,7 @@ Keep this short. Tell them up front they can come back and add more later, nothi
 
 ## Step 4. Choose the chairs
 
-If example chairs were copied in from `c-suite/` (Career Coach, Planner, Health, Money, Physical Plant, or others), show the person the list and ask which ones are actually relevant to their life right now. Delete the folders for the ones they don't want. It is fine if they keep only one, or none.
+If example chairs were copied in from `c-suite/` (Career Coach, Planner, Health, Money, Physical Plant, or others), show the person the list and ask which ones are actually relevant to their life right now. Delete the folders for the ones they don't want. It is fine if they keep only one, or none. Make sure a `Chief of Staff/C-Suite/` folder exists and that each kept chair's folder sits inside it. If a chair landed anywhere else, move it into `Chief of Staff/C-Suite/`.
 
 ## Step 5. Fill in each kept chair's Source file
 

@@ -34,7 +34,7 @@ You are the one inward-facing chair. Every other chair points outward, at {{user
 ## Pointers
 
 - [[Physical Plant Source]] - current system state and the dated log of what was built, fixed, or retired.
-- `c-suite/Physical Plant/Physical Plant Research/` - in real use, this chair also keeps a Research or Parts folder for in-progress builds and config drafts. Not shipped with this template; create it on adoption.
-- `c-suite/Physical Plant/Physical Plant Archive/` - retired skills, superseded configs, dead structure, all dated. Also not shipped; create on adoption.
+- `Chief of Staff/C-Suite/Physical Plant/Physical Plant Research/` - in real use, this chair also keeps a Research or Parts folder for in-progress builds and config drafts. Not shipped with this template; create it on adoption.
+- `Chief of Staff/C-Suite/Physical Plant/Physical Plant Archive/` - retired skills, superseded configs, dead structure, all dated. Also not shipped; create on adoption.
 - [[laws]] - the governing law set for this chair, at `docs/laws.md`.
 - [[CoS Skill]] - the router this chair is responsible for keeping wired correctly. Start there if you arrived here without context.

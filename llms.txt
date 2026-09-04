@@ -10,6 +10,8 @@
 - [SETUP-HUMANS.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/SETUP-HUMANS.md): Install guide written for a person with no coding background.
 - [SETUP-AI.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/SETUP-AI.md): The same install, written for an AI agent to execute.
 - [obsidian-setup.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/obsidian-setup.md): How to connect an Obsidian vault to an AI agent over MCP. Model-agnostic; covers Claude Code, Codex, Gemini, and other MCP clients.
+- [docs/notion-vs-obsidian.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/docs/notion-vs-obsidian.md): Short read on why this runs on Obsidian rather than Notion.
+- [docs/notion-vs-obsidian-deep.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/docs/notion-vs-obsidian-deep.md): The full analysis, with pricing and live tests.
 - [docs/laws.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/docs/laws.md): Thirteen laws governing the system, each with the mistake that produced it.
 - [docs/anatomy.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/docs/anatomy.md): The four-part anatomy every chair in the C-Suite follows.
 
