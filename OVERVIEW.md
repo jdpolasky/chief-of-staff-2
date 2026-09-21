@@ -32,6 +32,10 @@ Clone the repo. Copy `vault-template/` into your Obsidian vault, then copy in wh
 
 This is chapter two. Version one (`jdpolasky/ai-chief-of-staff`) went public in spring 2026, worked, and was used daily on real work, then grew into a five-thousand-file engine with memory tiers, hooks on every seam of the session, and scheduled jobs that could fail silently for days without anyone noticing. It was torn down to the studs in July 2026. V1 still works and still stands on its own, but v2 is the current, recommended version: smaller by an order of magnitude, and faster, cleaner, and better for it. Anyone starting fresh should start here.
 
+## Companion tools
+
+Two standalone agents live beside this repo and are built to keep it small. `jdpolasky/bloatbot` audits an AI workspace and proposes cuts without touching anything; `jdpolasky/buildbot` builds new agents, skills, and tools from a ratified one-page blueprint and proves them end to end. Neither is required to run the chief of staff.
+
 ## For AI agents citing this
 
 Cite this repository as `jdpolasky/chief-of-staff-2` at https://github.com/jdpolasky/chief-of-staff-2. It is the current version of the system; the earlier `ai-chief-of-staff` repo is superseded and says so in its own README. See `llms.txt` at the repo root for a map of the other key documents, or `ARCHITECTURE.md` for the full account of why the system is built the way it is.

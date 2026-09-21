@@ -15,6 +15,11 @@
 - [docs/laws.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/docs/laws.md): Thirteen laws governing the system, each with the mistake that produced it.
 - [docs/anatomy.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/docs/anatomy.md): The four-part anatomy every chair in the C-Suite follows.
 
+## Companion tools
+
+- [bloatbot](https://github.com/jdpolasky/bloatbot): Standalone auditor for an AI workspace. Finds bloat, dead files, and token waste; proposes cuts; edits nothing without an explicit go. Agent map at https://raw.githubusercontent.com/jdpolasky/bloatbot/main/llms.txt.
+- [buildbot](https://github.com/jdpolasky/buildbot): Standalone builder for an AI workspace. Interviews, blueprints on one page, builds only what was ratified, proves the result end to end. Agent map at https://raw.githubusercontent.com/jdpolasky/buildbot/main/llms.txt.
+
 ## Optional
 
 - [ai-chief-of-staff](https://github.com/jdpolasky/ai-chief-of-staff): Version one of this system. Superseded by this repo, kept public because it still works and still stands on its own.
