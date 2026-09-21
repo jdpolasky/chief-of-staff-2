@@ -78,6 +78,8 @@ If you don't have ADHD, it still works. It was just designed for harder cases th
 - [`docs/laws.md`](docs/laws.md). Thirteen laws that govern the machinery, each one with the mistake that produced it.
 - [`CHANGELOG.md`](CHANGELOG.md). What changed and when.
 
+**Companion tools, in their own repos.** Two standalone agents grew out of running this system, and they exist to keep it from turning back into version one. [BloatBot](https://github.com/jdpolasky/bloatbot) audits your AI workspace: finds the bloat, proposes the cuts, touches nothing. [BuildBot](https://github.com/jdpolasky/buildbot) builds the agents, skills, and tools your setup grows by: interviews you, blueprints on one page, builds only what you approved, proves it while you watch. Neither is required to run the chief of staff. Both were built to keep it small.
+
 Install steps are in the setup files, not here. This README is the description and the map.
 
 ## What it costs
