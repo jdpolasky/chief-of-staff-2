@@ -74,7 +74,7 @@ It'll ask you a few short questions, build out your Chief of Staff folder, and f
 
 ## How do you know it worked
 
-Open Obsidian. You should see a `Chief of Staff` folder with a core file, a router file, a source file, and a `Universal Skills` folder. If you kept any example chairs, you'll see those too, each filled in with something specific to you, not the placeholder text. And your AI should have shown you an actual briefing, not a description of what a briefing would look like.
+Open Obsidian. You should see a `Chief of Staff` folder with a core file, a router file, a source file, and a `Universal Skills` folder. If you kept any example chairs, you'll see those too, each filled in with something specific to you, not the placeholder text. Your name and today's date should replace every `{{user}}` and `{{date}}`. The one exception is the sample log entries and example rows in each chair's Source file, like `{{YYYY-MM-DD}} - {{short title}}`. Those stay as templates for future entries. And your AI should have shown you an actual briefing, not a description of what a briefing would look like.
 
 ## Troubleshooting
 

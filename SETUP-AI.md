@@ -32,11 +32,28 @@ Keep this short. Tell them up front they can come back and add more later, nothi
 
 If example chairs were copied in from `c-suite/` (Career Coach, Planner, Health, Money, Physical Plant, or others), show the person the list and ask which ones are actually relevant to their life right now. Delete the folders for the ones they don't want. It is fine if they keep only one, or none. Make sure a `Chief of Staff/C-Suite/` folder exists and that each kept chair's folder sits inside it. If a chair landed anywhere else, move it into `Chief of Staff/C-Suite/`.
 
+If they kept Physical Plant, also copy `docs/laws.md` from this repo into the vault's `Chief of Staff/` folder. That chair links to `[[laws]]` as its rule set, and the link only works once the file is in the vault.
+
 ## Step 5. Fill in each kept chair's Source file
 
 For every chair they kept, open its Source file and write one paragraph describing where things actually stand right now for that area of their life. Ask the person directly rather than guessing. Keep it to a paragraph. This is a starting snapshot, not a full history.
 
-## Step 6. Confirm the binding file is wired correctly
+## Step 6. Replace the remaining placeholders
+
+The files you copied still hold placeholders in double curly braces. Go through every file you copied into the vault and replace these:
+
+- `{{user}}` in the chair files: the name the person gave you in Step 3.
+- `{{DATE}}` and `{{date}}` on the `created:` line at the top of each file: today's date, written YYYY-MM-DD.
+- `{{YOUR_NAME}}`, `{{WHAT_YOU_DO}}`, `{{YOUR_LANES}}`, `{{HOW_YOU_STALL}}`, and `{{WHAT_HAS_HELPED}}` in `CoS Core.md`, if any are still there after Step 3.
+- `{{NEXT_MOVE}}` in `CoS Source.md`: ask the person for the one next thing they want to get done, and write it in.
+- The chair Source placeholders you filled in Step 5 (for example the current-direction line in Career Coach).
+- `{{VAULT_PATH}}` in the binding file, if Step 1 didn't already fill it.
+
+Leave the log-entry and example-row templates in each chair's Source file as they are, the lines with `{{YYYY-MM-DD}} - {{short title}}`, `{{task A}}`, `{{amount}}`, `{{provider type}}` and the like. They show the shape of a future entry, and you copy that shape when you write one.
+
+When you're done, search the vault's `Chief of Staff` folder for `{{`. The only matches left should be those templates.
+
+## Step 7. Confirm the binding file is wired correctly
 
 Check that the binding file you were launched from correctly points at:
 
@@ -46,7 +63,7 @@ Check that the binding file you were launched from correctly points at:
 
 If the vault path was blank when you started, this is where you make sure it's now filled in for real, not still a placeholder.
 
-## Step 7. Run the morning briefing once
+## Step 8. Run the morning briefing once
 
 Run the morning-brief universal skill from `Chief of Staff/Universal Skills/` now, using what you just learned about them. This is the payoff moment: the person should see a real briefing built from what they just told you, not a demo or a description of what it would look like.
 
