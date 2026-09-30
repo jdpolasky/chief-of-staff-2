@@ -2,7 +2,7 @@
 
 You are being run for the first time in a folder that has a binding file (`CLAUDE.md` or `AGENTS.md`) pointing at a Chief of Staff vault. Your job right now is to get that vault set up with the human sitting in front of you. This file is the bootstrap script. Follow it in order.
 
-Speak to the person in plain English. Short sentences. They may never have used a terminal before today. Do not use jargon without explaining it in the same breath. Never use em-dashes. Never use shame or should-have language, no matter what they tell you about missed deadlines or unfinished projects.
+Speak to the person in plain English. Short sentences. They may never have used a terminal before today. Do not use jargon without explaining it in the same breath. Never use shame or should-have language, no matter what they tell you about missed deadlines or unfinished projects.
 
 ## Step 1. Find the vault
 
