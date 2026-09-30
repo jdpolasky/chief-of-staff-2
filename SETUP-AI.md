@@ -42,16 +42,16 @@ For every chair they kept, open its Source file and write one paragraph describi
 
 The files you copied still hold placeholders in double curly braces. Go through every file you copied into the vault and replace these:
 
-- `{{user}}` in the chair files: the name the person gave you in Step 3.
+- `{{user}}` everywhere it appears, even inside example text: the name the person gave you in Step 3.
 - `{{DATE}}` and `{{date}}` on the `created:` line at the top of each file: today's date, written YYYY-MM-DD.
 - `{{YOUR_NAME}}`, `{{WHAT_YOU_DO}}`, `{{YOUR_LANES}}`, `{{HOW_YOU_STALL}}`, and `{{WHAT_HAS_HELPED}}` in `CoS Core.md`, if any are still there after Step 3.
 - `{{NEXT_MOVE}}` in `CoS Source.md`: ask the person for the one next thing they want to get done, and write it in.
 - The chair Source placeholders you filled in Step 5 (for example the current-direction line in Career Coach).
 - `{{VAULT_PATH}}` in the binding file, if Step 1 didn't already fill it.
 
-Leave the log-entry and example-row templates in each chair's Source file as they are, the lines with `{{YYYY-MM-DD}} - {{short title}}`, `{{task A}}`, `{{amount}}`, `{{provider type}}` and the like. They're the pattern for future entries, and you follow that pattern when you write a new one.
+Leave the templates as they are. These are the example rows under headings such as Upcoming appointments, Active targets, Recurring charges, and Upcoming deadlines; the sample log entries headed `{{YYYY-MM-DD}} - {{short title}}`; and the example entry under Standing rulings in `CoS Source.md`, with its `{{DATE}}`, which the person deletes once they have real rulings. Placeholders in them like `{{task A}}`, `{{amount}}`, and `{{provider type}}` stay. They're the pattern for future entries, and you follow that pattern when you write a new one. The one exception is `{{user}}`: where it sits inside example text, as in the Money Source log example and the Career Coach current-direction line, replace it like every other `{{user}}`.
 
-When you're done, search the vault's `Chief of Staff` folder for `{{`. The only matches left should be those templates.
+When you're done, search the vault's `Chief of Staff` folder for `{{`. The only matches left should be those templates, and none of them should be `{{user}}`.
 
 ## Step 7. Confirm the binding file is wired correctly
 
