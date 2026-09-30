@@ -46,10 +46,10 @@ You'll see lines of text scroll by. When the cursor stops, the download is done.
 
 Copy the whole contents of `vault-template/` into your Obsidian vault folder. Then look through `c-suite/` and copy in only the chairs you actually want. You don't have to use all five, and you can add more later. Chairs live in a folder named `C-Suite` inside `Chief of Staff`, so an adopted chair ends up at `Chief of Staff/C-Suite/Career Coach/`. Create the `C-Suite` folder if it isn't there yet.
 
-**Step 4. Copy in the binding file for your AI.** Inside the downloaded folder there's a `bindings/` folder with one small file per AI harness:
+**Step 4. Copy in the binding file for your AI.** Inside the downloaded `chief-of-staff-2` folder there's a `bindings/` folder with one small file per AI harness. Copy yours into the top level of `chief-of-staff-2`, next to `SETUP-AI.md`. That's the folder you'll launch your AI from, so it can find both files.
 
-- If you're using Claude Code, copy `bindings/claude-code/CLAUDE.md` into the folder you'll launch Claude Code from.
-- If you're using Codex CLI or a similar tool that reads an `AGENTS.md` file, copy `bindings/agents-md/AGENTS.md` into that same folder instead.
+- If you're using Claude Code, copy `bindings/claude-code/CLAUDE.md` into `chief-of-staff-2`.
+- If you're using Codex CLI or a similar tool that reads an `AGENTS.md` file, copy `bindings/agents-md/AGENTS.md` into `chief-of-staff-2` instead.
 
 This file is small on purpose. It just tells your AI where your vault is and what to read first.
 
@@ -57,7 +57,16 @@ This file is small on purpose. It just tells your AI where your vault is and wha
 
 If you don't know your vault's exact path, open Obsidian, right-click your vault name in the sidebar, and choose "Show in folder." That's the path.
 
-**Step 6. Launch your AI from that folder, and say:**
+**Step 6. Launch your AI from inside the `chief-of-staff-2` folder.** If your AI isn't installed yet, here are the install pages: [Claude Code](https://code.claude.com/docs/en/setup), [Codex CLI](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli).
+
+For Claude Code, type these two lines into the terminal, pressing Enter after each:
+
+    cd chief-of-staff-2
+    claude
+
+The first line moves the terminal into the folder you downloaded in Step 2. The second starts Claude Code there. For another AI, `cd` into the same folder and start it with its own command. Launch from this folder every time you use your Chief of Staff, since that's where the binding file lives.
+
+Once your AI is running, say:
 
     read SETUP-AI.md and set me up
 
