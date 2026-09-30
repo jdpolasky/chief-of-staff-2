@@ -57,14 +57,14 @@ This file is small on purpose. It just tells your AI where your vault is and wha
 
 If you don't know your vault's exact path, open Obsidian, right-click your vault name in the sidebar, and choose "Show in folder." That's the path.
 
-**Step 6. Launch your AI from inside the `chief-of-staff-2` folder.** If your AI isn't installed yet, here are the install pages: [Claude Code](https://code.claude.com/docs/en/setup), [Codex CLI](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli).
+**Step 6. Launch your AI from inside the `chief-of-staff-2` folder.** If your AI isn't installed yet, here are the install instructions for [Claude Code](https://code.claude.com/docs/en/setup) and [Codex CLI](https://github.com/openai/codex).
 
 For Claude Code, type these two lines into the terminal, pressing Enter after each:
 
     cd chief-of-staff-2
     claude
 
-The first line moves the terminal into the folder you downloaded in Step 2. The second starts Claude Code there. For another AI, `cd` into the same folder and start it with its own command. Launch from this folder every time you use your Chief of Staff, since that's where the binding file lives.
+The first line moves the terminal into the folder you downloaded in Step 2. The second starts Claude Code there. Other AI tools start from the same folder with their own command. Launch from this folder every time you use your Chief of Staff, since that's where the binding file lives.
 
 Once your AI is running, say:
 
