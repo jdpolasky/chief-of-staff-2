@@ -49,7 +49,7 @@ The files you copied still hold placeholders in double curly braces. Go through 
 - The chair Source placeholders you filled in Step 5 (for example the current-direction line in Career Coach).
 - `{{VAULT_PATH}}` in the binding file, if Step 1 didn't already fill it.
 
-Leave the log-entry and example-row templates in each chair's Source file as they are, the lines with `{{YYYY-MM-DD}} - {{short title}}`, `{{task A}}`, `{{amount}}`, `{{provider type}}` and the like. They show the shape of a future entry, and you copy that shape when you write one.
+Leave the log-entry and example-row templates in each chair's Source file as they are, the lines with `{{YYYY-MM-DD}} - {{short title}}`, `{{task A}}`, `{{amount}}`, `{{provider type}}` and the like. They're the pattern for future entries, and you follow that pattern when you write a new one.
 
 When you're done, search the vault's `Chief of Staff` folder for `{{`. The only matches left should be those templates.
 
