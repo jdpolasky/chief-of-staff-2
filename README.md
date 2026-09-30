@@ -32,7 +32,7 @@ Yes: [`OVERVIEW.md`](OVERVIEW.md). It's the whole system in one file, meant for 
 
 ## What it looks like
 
-Here's a made-up morning brief for a fictional user, Maya, a freelance designer. It has the three parts the [morning skill](vault-template/Chief%20of%20Staff/Universal%20Skills/Morning.md) asks for, plus one next action.
+Here's a made-up morning brief for a fictional user, Maya, a freelance designer. It has the three parts the [morning skill](vault-template/Chief%20of%20Staff/Universal%20Skills/Morning.md) asks for (today, this week, and the big picture), plus one next action.
 
 ```
 Morning, Maya.
@@ -45,10 +45,10 @@ This week
 - Thursday: logo drafts due to the bike shop.
 - You wanted the dentist booked by Friday. No appointment yet.
 
-Big picture
+The big picture
 - Both client jobs build toward the steady retainer work you want by spring.
 
-First thing to do
+One next action
 - Open the tax payment page and pay it before the 10:00 call.
 ```
 
