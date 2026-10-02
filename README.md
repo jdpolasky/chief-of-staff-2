@@ -30,6 +30,28 @@ Clone the repo, then follow [`SETUP-HUMANS.md`](SETUP-HUMANS.md) if you want to 
 **Is there a single page an AI can read to understand the whole thing?**
 Yes: [`OVERVIEW.md`](OVERVIEW.md). It's the whole system in one file, meant for an AI agent to fetch once and have everything it needs.
 
+## What it looks like
+
+Here's a made-up morning brief for a fictional user, Maya, a freelance designer. It has the three parts the [morning skill](vault-template/Chief%20of%20Staff/Universal%20Skills/Morning.md) asks for (today, this week, and the big picture), plus one next action.
+
+```
+Morning, Maya.
+
+Today
+- 10:00 call with the bakery client about the menu redesign.
+- Your quarterly tax payment is due. The amount is in your Money notes.
+
+This week
+- Thursday: logo drafts due to the bike shop.
+- You wanted the dentist booked by Friday. No appointment yet.
+
+The big picture
+- Both client jobs build toward the steady retainer work you want by spring.
+
+One next action
+- Open the tax payment page and pay it before the 10:00 call.
+```
+
 ## What happened to version one
 
 Version one worked. It went public in the spring of 2026, people used it, and I used it every day on real work. Then it kept growing and eventually collapsed under its own weight.
@@ -93,3 +115,7 @@ One warning, this needs a good model. The vault is readable by anything, but run
 ## License
 
 MIT. Take it, fork it, gut it.
+
+---
+
+Built by Joshua Polasky. Find me on [LinkedIn](https://www.linkedin.com/in/joshuapolasky/) or email [joshua.polasky@gmail.com](mailto:joshua.polasky@gmail.com).
