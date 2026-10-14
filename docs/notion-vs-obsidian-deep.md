@@ -124,7 +124,7 @@ Notion's privacy protections are solid for a cloud service. But there is a meani
 
 Obsidian has thousands of community plugins and hundreds of themes. The most-downloaded plugins (Excalidraw, Templater, Dataview, Tasks) each have millions of downloads. The plugin ecosystem updates constantly, with new releases and patches landing weekly. The r/ObsidianMD subreddit and the official Discord are both large and active.
 
-Notion has no plugin ecosystem. It is a closed platform with official connectors: Salesforce, Box, Slack, GitHub, and others. Deep customization in Notion is whatever Notion decides to build. Deep customization in Obsidian is whatever the community's plugin developers have decided to build, which turns out to be a lot.
+Notion has no plugin ecosystem. It is a closed platform with official connectors: Salesforce, Box, Slack, GitHub, and others. Deep customization in Notion is whatever Notion decides to build. Deep customization in Obsidian is whatever Obsidian's plugin developers have decided to build, which turns out to be a lot.
 
 The Smart Connections plugin alone, which powers semantic search across your vault and surfaces non-obvious connections between notes, has no direct Notion equivalent. It is built on the same vector embedding technology that makes RAG systems work, applied to your personal knowledge base.
 
