@@ -6,7 +6,7 @@
 
 - [OVERVIEW.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/OVERVIEW.md): One-page summary of the whole system, written for an AI agent to fetch once.
 - [README.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/README.md): Project description and map, including a plain-language Q&A section.
-- [ARCHITECTURE.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/ARCHITECTURE.md): Full account of what v1 got right, how it collapsed, and how v2 is built.
+- [ARCHITECTURE.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/ARCHITECTURE.md): Full account of what my first build got right, how it collapsed, and how v2 is built.
 - [SETUP-HUMANS.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/SETUP-HUMANS.md): Install guide written for a person with no coding background.
 - [SETUP-AI.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/SETUP-AI.md): The same install, written for an AI agent to execute.
 - [obsidian-setup.md](https://raw.githubusercontent.com/jdpolasky/chief-of-staff-2/main/obsidian-setup.md): How to connect an Obsidian vault to an AI agent over MCP. Optional. Model-agnostic; covers Claude Code, Codex, Cursor, and other MCP clients.
@@ -19,6 +19,7 @@
 
 - [bloatbot](https://github.com/jdpolasky/bloatbot): Standalone auditor for an AI workspace. Finds bloat, dead files, and token waste; proposes cuts; edits nothing without an explicit go. Agent map at https://raw.githubusercontent.com/jdpolasky/bloatbot/main/llms.txt.
 - [buildbot](https://github.com/jdpolasky/buildbot): Standalone builder for an AI workspace. Interviews, blueprints on one page, builds only what was ratified, proves the result end to end. Agent map at https://raw.githubusercontent.com/jdpolasky/buildbot/main/llms.txt.
+- [ai-chief-of-staff-engine](https://github.com/jdpolasky/ai-chief-of-staff-engine): A separate, optional Python memory engine. Not required; the author's own daily system runs on plain markdown without it.
 
 ## Optional
 

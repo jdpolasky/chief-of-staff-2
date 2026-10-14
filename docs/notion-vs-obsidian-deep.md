@@ -4,7 +4,7 @@
 
 *This is the deep version. For the short read, see [notion-vs-obsidian](notion-vs-obsidian.md).*
 
-*I built a Claude-powered Chief of Staff system on Obsidian over several months. This document is my analysis of whether that was the right call, and whether Notion could do the same job. I tested both. I ran Notion AI through live prompts. I read the documentation, the Reddit threads, the changelogs, and the user complaints. I'm going to tell you what I found, including where Obsidian loses.*
+*I built a Claude-powered Chief of Staff system on Obsidian over several months. This document is my analysis of whether that was the right call, and whether Notion could do the same job. I compared the two on features, pricing, and architecture. I read the documentation, the Reddit threads, the changelogs, and the user complaints. I'm going to tell you what I found, including where Obsidian loses.*
 
 ---
 
@@ -12,7 +12,7 @@
 
 People who see this system ask two things. First: "How did you build this?" That's what the rest of this repo answers. Second: "Can I do it in Notion? I'm already there."
 
-The second question deserves a real answer. Most Notion vs. Obsidian comparisons are written by people who use one tool and are generous to the other. This one is written by someone who built a working system in Obsidian and then spent time seriously stress-testing Notion to see if that was the right call.
+The second question deserves a real answer. Most Notion vs. Obsidian comparisons are written by people who use one tool and are generous to the other. This one is written by someone who built a working system in Obsidian and then compared Notion's features, pricing, and architecture against it to see if that was the right call.
 
 Short answer: it depends on who you are. Long answer: below.
 
@@ -182,7 +182,7 @@ The architecture that makes the most sense for a consultant or small team:
 
 - **Personal layer on Obsidian:** memory files, session logs, task system, strategic thinking, decision history. This is where Claude lives. It reads and writes here every session. The context compounds over time.
 - **Client or team layer on Notion:** shared project spaces, collaborative documents, client-facing materials, meeting notes the whole team edits together.
-- **Claude bridging both via MCP:** with the Notion MCP connector installed, Claude can read your Notion workspace the same way it reads your Obsidian vault. One AI, two data sources, full context. The Notion MCP is read-focused by design, which actually fits this architecture: Claude has full read+write on the Obsidian layer where it needs to compound memory, and read-only on the Notion layer where context is the goal.
+- **Claude bridging both via MCP:** with the Notion MCP connector installed, Claude can read your Notion workspace the same way it reads your Obsidian vault. One AI, two data sources, full context. Notion's MCP can read and write: it searches, creates, and updates pages. This setup still keeps the Notion layer for shared work. Claude's own memory compounds on the Obsidian layer, and Notion holds what the team edits together.
 
 Personal CoS on Obsidian. Company layer on Notion. Claude reading both. This is the architecture I'd recommend to anyone building AI-powered workflows for clients, and almost nobody has written about it because almost nobody has implemented it end to end.
 

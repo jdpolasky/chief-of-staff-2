@@ -26,7 +26,7 @@ This part is the same no matter which AI you use. You do it once.
 
 **Install the connector plugin.** In Obsidian, open Settings, then Community plugins, then Browse. Search for **MCP Connector** by Stefano Ferri and install it. Turn it on. This plugin runs a small MCP server inside Obsidian itself, on your own machine, with its own on-device search. The server and its search run on your machine. It is the maintained successor to an older plugin called MCP Tools, which was archived in May 2026, so if an older guide points you at MCP Tools, this is what replaced it.
 
-**Find the address.** Once the plugin is on, its settings show the address it's serving at. The usual one is `http://127.0.0.1:27200/mcp`, but copy the exact address shown in your settings and use that wherever this guide shows the usual one. That address is local to your machine and reachable by nothing outside it. Tested with MCP Connector 3.0.2, October 2026.
+**Find the address.** Once the plugin is on, its settings show the address it's serving at. The usual one is `http://127.0.0.1:27200/mcp`, but copy the exact address shown in your settings and use that wherever this guide shows the usual one. That address is local to your machine and reachable by nothing outside it. Tested with MCP Connector 3.0.2 (October 2026); the plugin updates often, so use the address its settings show.
 
 **Make a token.** In the plugin's settings, open the Access control panel and create a token. Copy it somewhere safe for the next step. Treat it like a password and never paste it into a note. You can make a separate token for each agent you connect, up to ten.
 

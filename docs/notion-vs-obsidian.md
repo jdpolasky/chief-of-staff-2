@@ -1,4 +1,4 @@
-# I Built My AI Chief of Staff on Obsidian, but would Notion work? Here's an Analysis of Obsidian vs Notion.
+# I Built My AI Chief of Staff on Obsidian, but Would Notion Work? Here's an Analysis of Obsidian vs Notion.
 
 *Last verified August 2026.*
 
@@ -49,7 +49,7 @@ For a Chief of Staff system that synthesis is the core use case. Cross-referenci
 
 The shift to agents widens this gap. An AI agent can live directly in a folder of plain markdown files: read them, write them, reorganize them, with no translation layer in between. To do the same work in Notion, the agent goes through Notion's API, where every page gets converted to and from Notion's block format on each trip. Plain files are turning out to be what agents work best in, and that argument gets stronger with every release cycle.
 
-There's also the migration question. If you've built a deep Obsidian system and want to move to Notion, budget time and expect to lose structure. Wikilinks, backlinks, and plugin metadata don't transfer cleanly. The reverse trip -- Notion to Obsidian -- is actually straightforward. The broader risk with Notion is format longevity: your content lives in a proprietary database, not plain text files, and complex pages don't always export cleanly to other tools. Obsidian files are readable in any text editor regardless of whether the app exists.
+There's also the migration question. If you've built a deep Obsidian system and want to move to Notion, budget time and expect to lose structure. Wikilinks, backlinks, and plugin metadata don't transfer cleanly. The reverse trip, Notion to Obsidian, is actually straightforward. The broader risk with Notion is format longevity: your content lives in a proprietary database, not plain text files, and complex pages don't always export cleanly to other tools. Obsidian files are readable in any text editor regardless of whether the app exists.
 
 ---
 
@@ -69,7 +69,7 @@ Use both.
 
 Obsidian for your personal layer: memory files, session logs, task system, strategic thinking. This is where Claude lives and reads and writes. It's yours, it's local, it compounds over time.
 
-Notion for your client or team layer: shared project space, collaborative docs, client-facing materials. Claude can read Notion via MCP just like it reads your vault.
+Notion for your client or team layer: shared project space, collaborative docs, client-facing materials. Claude can read and write Notion through its MCP server, the same way it works with your vault.
 
 Personal CoS on Obsidian. Company layer on Notion. Claude bridging both. That's the architecture that makes the most sense for a consultant or small team, and almost nobody has written about it because almost nobody has built it.
 

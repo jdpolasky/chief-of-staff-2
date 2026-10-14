@@ -6,7 +6,7 @@ This document is about what happened next. The public version one stayed a start
 
 The short version is the [README](README.md). This is the long version, for readers who want the bones before or after they install anything.
 
-## What v1 got right
+## What my first build got right
 
 Three things, and they all carried forward untouched.
 
@@ -44,7 +44,7 @@ Four commitments came out of it.
 
 **Hidden memory stays empty.** Model-side persistent memory is off. Every durable thing goes in the vault, in the file belonging to whichever chair owns it. That ruling came out of a bad week where the model and the vault disagreed, and only one of them was something I could open and check.
 
-**Routine work is done with code. The model makes the judgments.** If a task has one correct answer and no discretion, it should be a script. If it requires reading a situation, it goes to the model. Most of what died in v1 was a model doing a script's job, badly and expensively, at four in the morning.
+**Routine work is done with code. The model makes the judgments.** If a task has one correct answer and no discretion, it should be a script. If it requires reading a situation, it goes to the model. Most of what died in my private build was a model doing a script's job, badly and expensively, at four in the morning.
 
 ## The vault layout
 
@@ -120,7 +120,7 @@ Thirteen laws govern the machinery. Each one exists because of a real mistake, o
 
 Two of them, plus the coda that closes the list, summarized here:
 
-**The coda: retire what you don't need instead of watching it.** If something breaks quietly and nobody misses it, retire it to the archive instead of monitoring it. This idea is what killed most of my private v1 build. The instinct when a job fails silently is to add an alert. The alert is a new thing to maintain, protecting a thing whose absence you could not feel. The jobs you decide to keep fall under law five instead, and each carries a heartbeat so you can see it ran.
+**The coda: retire what you don't need instead of watching it.** If something breaks quietly and nobody misses it, retire it to the archive instead of monitoring it. This idea is what killed most of my private build. The instinct when a job fails silently is to add an alert. The alert is a new thing to maintain, protecting a thing whose absence you could not feel. The jobs you decide to keep fall under law five instead, and each carries a heartbeat so you can see it ran.
 
 **Routine work is done with code. The model makes the judgments.** Anything with one correct answer should be deterministic. Anything requiring a read on your situation goes to the model. Confusing the two is how you get expensive scripts and unreliable judgment at the same time.
 
@@ -142,9 +142,9 @@ It means no service can deprecate you. No terms-of-service change touches your n
 
 ### Why model agnostic
 
-This one is new, and it is the direct lesson of v1.
+This one is new, and it is the direct lesson of my private build.
 
-Version one was built into a specific AI product, using that product's memory, that product's hooks, that product's scheduler. That coupling produced most of the machinery that later had to be torn out. It also meant that a model switch would have been a rebuild.
+My private build was tied to a specific AI product, using that product's memory, that product's hooks, that product's scheduler. That coupling produced most of the machinery that later had to be torn out. It also meant that a model switch would have been a rebuild.
 
 The models are moving fast and the leader changes. Betting the whole system on one of them is a bet you have to keep re-winning. Keeping the canon in pure markdown means the bet never has to be placed. You run whatever is best this quarter, point a thin adapter at the same vault, and nothing about your life needs migrating.
 
@@ -160,7 +160,7 @@ No web UI. No mobile app. No hosted service. Nothing runs on anybody else's comp
 
 No multi-user support. One vault, one person. Shared use would mean permissions, and permissions would mean a database, and a database would mean the semantic layer stops being readable.
 
-No scheduled jobs shipped by default. That is a direct scar from v1. If you want something to fire on a timer, wire it up yourself and give it a heartbeat, a visible sign that it ran, per law five in [`docs/laws.md`](docs/laws.md).
+No scheduled jobs shipped by default. That is a direct lesson from my private build. If you want something to fire on a timer, wire it up yourself and give it a heartbeat, a visible sign that it ran, per law five in [`docs/laws.md`](docs/laws.md).
 
 No analytics, no telemetry, no phoning home. There is nowhere for it to phone.
 

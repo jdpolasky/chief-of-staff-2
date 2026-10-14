@@ -14,11 +14,13 @@
 - Setup guides: launch folder named, launch commands given, install pages linked, a placeholder-replacement step, and the `laws.md` copy for Physical Plant. The author's personal punctuation rule is out of the user-facing instructions.
 - README: a sample morning brief for a fictional user, with headings that match the morning skill.
 
-## 2026-09-04
+## v2.0
+
+### 2026-09-04
 - Model-agnostic Obsidian wiring guide added (obsidian-setup.md): MCP Connector primary, Local REST API fallback, verified config for Claude Code, Codex, Gemini, and Cursor.
 - Notion vs Obsidian docs moved here from version one (docs/).
 - Setup guides now name the C-Suite folder; chair pointer paths are vault paths.
 - First release tagged: v2.0.
 
-## 2026-08-07
-- Version two published: torn down from the five-thousand-file v1 and rebuilt as a vault template, five example chairs, three universal skills, and thin bindings for any AI harness.
+### 2026-08-07
+- Version two published: torn down from my private build, a five-thousand-file engine, and rebuilt as a vault template, five example chairs, three universal skills, and thin bindings for any AI harness.

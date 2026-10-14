@@ -14,7 +14,7 @@ A chair is a focused agent with one job: a role paragraph, a scope of what it ow
 
 **To retire a chair:** move its folder into `Chief of Staff/CoS Archive/` with the date, and remove it from the roster line in `CoS Skill`. Don't delete it. A retired chair is kept as history.
 
-The five chairs here, Career Coach, Planner, Health, Money, and Physical Plant, are examples, not a required set. Rename them, merge them, split them, or invent entirely new ones for whatever your life actually needs. The only fixed part is the anatomy: a Skill and a Source, scoped clearly, wired to the rest.
+The five chairs here, Career Coach, Planner, Health, Money, and Physical Plant, are examples, not a required set. Rename them, merge them, split them, or invent entirely new ones for whatever your life actually needs. The fixed part is the four-part anatomy in [`docs/anatomy.md`](../docs/anatomy.md). This repo includes the Skill and the Source.
 
 ## Who made this
 
