@@ -11,6 +11,10 @@ related: "[[Planner Skill]]"
 
 Current task list and calendar state for {{user}}. Updated by dated entry, newest first. Older entries stay in place as history; add new ones rather than editing past entries.
 
+## Where things stand
+
+{{where things stand}}
+
 ## Open loops
 
 - {{task or commitment}} - next action: {{one physical step}} - due: {{date or "no date"}}

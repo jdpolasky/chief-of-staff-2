@@ -11,6 +11,10 @@ related: "[[Career Coach Skill]]"
 
 Current state of {{user}}'s career strategy, active search (if any), and public presence. Updated by dated entry, newest first. Older entries are left in place as history; do not edit past entries, only add new ones.
 
+## Where things stand
+
+{{where things stand}}
+
 ## Current direction
 
 {{one or two sentences on where {{user}}'s career is pointed right now}}

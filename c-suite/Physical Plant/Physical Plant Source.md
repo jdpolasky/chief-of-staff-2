@@ -11,6 +11,10 @@ related: "[[Physical Plant Skill]]"
 
 Current state of the harness, skill wiring, scheduled jobs, and file structure. Updated by dated entry, newest first. Older entries stay in place as history; add new ones rather than editing past entries.
 
+## Where things stand
+
+{{where things stand}}
+
 ## Current build
 
 - {{component: e.g. "CoS Skill router"}} - status: {{working, in progress, needs revisit}}

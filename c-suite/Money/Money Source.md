@@ -11,6 +11,10 @@ related: "[[Money Skill]]"
 
 Current bills, recurring charges, and money deadlines for {{user}}. Updated by dated entry, newest first. Older entries stay in place as history; add new ones rather than editing past entries.
 
+## Where things stand
+
+{{where things stand}}
+
 ## Recurring charges
 
 - {{name of charge}} - {{amount}} - renews {{cadence, e.g. monthly on the 3rd}}
