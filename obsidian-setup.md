@@ -17,7 +17,7 @@ A word on models, since this is meant to work with any of them. An open model li
 Three things, all but one of them free.
 
 1. **Obsidian**, the notes app your vault lives in. Free, from [obsidian.md](https://obsidian.md). Install it and create a vault, which is just a folder where Obsidian keeps your notes. You do not need any notes in it yet.
-2. **An AI agent that can read and write files on your computer.** Claude Code is the one this project is built around and the one these instructions treat as the default. OpenAI's Codex CLI, Cursor, and several others work too, and they each get their own line below. A paid plan is the one real cost here; the free tiers usually cannot run these agents.
+2. **An AI agent that can read and write files on your computer.** Claude Code is the one this project is built around and the one these instructions treat as the default. OpenAI's Codex CLI and Cursor work too, and each gets its own section below. A paid plan is the one real cost here; the free tiers usually cannot run these agents.
 3. **A few minutes.** That is the whole install.
 
 ## Step one: the vault side

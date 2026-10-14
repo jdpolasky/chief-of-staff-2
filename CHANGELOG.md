@@ -7,7 +7,7 @@
 - The Obsidian MCP connection is marked optional everywhere. obsidian-setup tells you to copy the exact address from the plugin's settings and names the tested version. Gemini CLI is no longer listed.
 - One stance on retired parts (move them to an archive folder) and one on monitoring (jobs you keep carry a heartbeat). The coda is no longer called one of the thirteen laws.
 - The five-thousand-file story is described as the author's private build; the public v1 was the starter template.
-- Each chair Source gets a "Where things stand" heading. One archive folder name everywhere. Root `CLAUDE.md` and `AGENTS.md` are git-ignored.
+- Each chair Source gets a "Where things stand" heading. Retired chairs and Chief-seat logs go to `Chief of Staff/CoS Archive/`; each chair's own archive is `<Chair> Archive/`. Root `CLAUDE.md` and `AGENTS.md` are git-ignored.
 - A privacy line, a tested-on line, and an engine caveat in the README. Unbacked claims cut from the Notion docs. New author footer.
 
 ### 2026-10-02

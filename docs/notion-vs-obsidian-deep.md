@@ -34,7 +34,7 @@ This gets overlooked in most comparisons, so let's address it directly.
 
 Obsidian's local-first architecture is not just a privacy feature. It's a business model. Because your files live on your machine, Obsidian's operational costs are near zero. They don't pay to store your data. That's why a small team can serve millions of users profitably with no outside capital. The absence of VC funding means no exit pressure, no quarterly growth targets, no incentive to monetize your data. The core product is free and likely stays that way.
 
-Notion's model is different. It's backed by venture capital, and venture investors expect growth. That pressure can flow downstream over time through pricing changes, feature paywalling, and data strategy. This isn't a criticism. It's how VC-backed companies work. But if you're building an operating system you plan to use for the next decade, it's worth knowing who you're betting on.
+Notion's model is different. It's backed by venture capital, and venture investors expect growth. That pressure can flow downstream over time through pricing changes, feature paywalling, and data strategy. That's how VC-backed companies work. But if you're building an operating system you plan to use for the next decade, it's worth knowing who you're betting on.
 
 ---
 

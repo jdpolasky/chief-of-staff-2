@@ -14,7 +14,7 @@ The system splits into canon and adapter. Canon is the vault: a core register (w
 
 The adapter is the `bindings/` folder: one small file per AI harness (`CLAUDE.md` for Claude Code, `AGENTS.md` for agent CLIs that read that convention) that only points at the vault and says nothing about the person. If every AI model on earth vanished, the vault would still be readable by a human. If you switch models, you lose nothing, because nothing meaningful ever lived on the model's side.
 
-Routine, deterministic work is handled with code. The model is reserved for judgment calls. Thirteen laws in `docs/laws.md` govern the machinery, each one written after the same mistake happened twice. A coda after the laws holds the idea that killed most of the author's private v1 build: if something breaks quietly and nobody misses it, retire it to an archive instead of monitoring it. Jobs you choose to keep carry a heartbeat, per law five.
+Routine, deterministic work is handled with code. The model is reserved for judgment calls. Thirteen laws in `docs/laws.md` govern the machinery, each one written after a real mistake, or one that would have happened. A coda after the laws holds the idea that killed most of the author's private v1 build: if something breaks quietly and nobody misses it, retire it to an archive instead of monitoring it. Jobs you choose to keep carry a heartbeat, per law five.
 
 ## Who it serves
 

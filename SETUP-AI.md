@@ -40,7 +40,7 @@ If they kept Physical Plant, also copy `docs/laws.md` from this repo into the va
 
 ## Step 5. Fill in each kept chair's Source file
 
-For every chair they kept, open its Source file and write one paragraph under the "Where things stand" heading, in place of `{{where things stand}}`, describing where things actually stand right now for that area of their life. Ask the person directly rather than guessing. Keep it to a paragraph. This is a starting snapshot, not a full history.
+For every chair they kept, open its Source file and write one paragraph under the "Where things stand" heading, in place of `{{where things stand}}`, describing where things actually stand right now for that area of their life. Ask the person directly rather than guessing. Keep it to a paragraph. This is a starting snapshot. The history builds up as you use it.
 
 ## Step 6. Replace the remaining placeholders
 

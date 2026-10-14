@@ -34,7 +34,7 @@ Law ten says the system should never become a project in its own right. My build
 
 The rebuild ran on a single question asked of every single piece: if this vanished tonight, would I even notice?
 
-Anything that failed that question came out of the running system rather than getting fixed. It wasn't disabled or wrapped in monitoring. Going forward, retired parts move to an archive folder, per the museum law in [`docs/laws.md`](docs/laws.md), so they stop running but stay recoverable. Monitoring a thing you don't need is how you end up with five thousand files.
+Anything that failed that question came out of the running system rather than getting fixed. It wasn't disabled or wrapped in monitoring. Going forward, retired parts move to an archive folder, per the museum law in [`docs/laws.md`](docs/laws.md), so they stop running but stay recoverable. Monitoring things I didn't need is part of how my private build reached five thousand files.
 
 Four commitments came out of it.
 
@@ -118,9 +118,9 @@ The cost of this design is that it asks more of the model at runtime. There is n
 
 Thirteen laws govern the machinery. Each one exists because the same mistake happened at least twice, and each one is written up in [`docs/laws.md`](docs/laws.md) alongside the failure that produced it. Reading that page is the fastest way to understand why the system is shaped this way.
 
-Two of them, plus the coda that closes the list, quoted here:
+Two of them, plus the coda that closes the list, summarized here:
 
-**The coda: subtraction over surveillance.** If something breaks quietly and nobody misses it, retire it to the archive instead of monitoring it. This idea is what killed most of my private v1 build. The instinct when a job fails silently is to add an alert. The alert is a new thing to maintain, protecting a thing whose absence you could not feel. Subtraction is cheaper. The jobs you decide to keep fall under law five instead, and each carries a heartbeat so you can see it ran.
+**The coda: retire what you don't need instead of watching it.** If something breaks quietly and nobody misses it, retire it to the archive instead of monitoring it. This idea is what killed most of my private v1 build. The instinct when a job fails silently is to add an alert. The alert is a new thing to maintain, protecting a thing whose absence you could not feel. The jobs you decide to keep fall under law five instead, and each carries a heartbeat so you can see it ran.
 
 **Routine work is done with code. The model makes the judgments.** Anything with one correct answer should be deterministic. Anything requiring a read on your situation goes to the model. Confusing the two is how you get expensive scripts and unreliable judgment at the same time.
 

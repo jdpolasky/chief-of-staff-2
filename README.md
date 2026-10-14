@@ -1,6 +1,6 @@
 # Chief of Staff, v2
 
-> **Chapter one is here:** [`jdpolasky/ai-chief-of-staff`](https://github.com/jdpolasky/ai-chief-of-staff). That repo still works and still stands on its own. This repo is what it became after it grew too big and had to be torn down.
+> **Chapter one is here:** [`jdpolasky/ai-chief-of-staff`](https://github.com/jdpolasky/ai-chief-of-staff). That repo still works and still stands on its own. This repo is what my own system became after it grew too big and had to be torn down.
 
 > **Have an AI walk you through it.** If you have a current-generation AI assistant in any form, paste [`SETUP-HUMANS.md`](SETUP-HUMANS.md) into it and say "walk me through this." It reads back to you in plain English and helps when something breaks. The doc was written to work both ways.
 
@@ -19,7 +19,7 @@ An AI assistant that keeps track of your calendar, your open commitments, and yo
 People with ADHD, or anyone whose reasoning is fine but whose working memory and executive function aren't. If you lose a task the moment it leaves the screen, if starting is harder than doing, if coming back after time away costs you more than the time away did, this was built for you. It works fine without ADHD too, it was just designed for a harder case than most.
 
 **What does it run on?**
-Any current-generation agentic AI that can read and write files on your computer (Claude Code is the reference case) and any markdown editor (Obsidian is the one this repo is built around, but it doesn't require it). The AI is a thin, swappable adapter. The system itself is a folder of plain text files you could open in Notepad. Tested end to end on Claude Code; other harnesses are wired but not run in full.
+Any current-generation agentic AI that can read and write files on your computer (Claude Code is the reference case) and any markdown editor (Obsidian is the one this repo is built around, but it doesn't require it). The AI is a thin, swappable adapter. The system itself is a folder of plain text files you could open in Notepad. Built on Claude Code; other harnesses are wired but not run in full.
 
 **How is this different from a to-do app or a Notion template?**
 A to-do app holds tasks. This holds context, who you are, how you work, and what's actually going on in your life right now, and an AI uses that context to reason about what you need instead of just displaying a list. There's no database, no hosted service, and nothing that can be deprecated out from under you. It's markdown, on your own disk.
@@ -74,7 +74,7 @@ The AI layer is a thin, disposable adapter. It is a handful of files that tell w
 
 Nothing lives in model-side memory. That folder stays empty on purpose. If you switch models tomorrow, you lose nothing, because there's nothing on that side to lose.
 
-When something breaks and nobody misses it, you retire it to an archive folder instead of adding monitoring to it. Monitoring everything is how the last one bloated to death. The jobs you choose to keep each carry a heartbeat, a visible sign that they ran, so a failure can't hide.
+When something breaks and nobody misses it, you retire it to an archive folder instead of adding monitoring to it. Adding monitoring to everything is part of how my private build grew too big. The jobs you choose to keep each carry a heartbeat, a visible sign that they ran, so a failure can't hide.
 
 Routine work is done with code. The model makes the judgments. Rules exist only after the same mistake has happened twice.
 
@@ -100,7 +100,7 @@ If you don't have ADHD, it still works. It was just designed for harder cases th
 - [`docs/laws.md`](docs/laws.md). Thirteen laws that govern the machinery, each one with the mistake that produced it.
 - [`CHANGELOG.md`](CHANGELOG.md). What changed and when.
 
-**Companion tools, in their own repos.** I designed both of these tools specifically to keep Chief of Staff v2 lean and functional. [BloatBot](https://github.com/jdpolasky/bloatbot) audits your AI workspace: finds the bloat, proposes the cuts, touches nothing. [BuildBot](https://github.com/jdpolasky/buildbot) builds the agents, skills, and tools your setup grows by: interviews you, blueprints on one page, builds only what you approved, proves it while you watch. Neither is required to run the chief of staff. [ai-chief-of-staff-engine](https://github.com/jdpolasky/ai-chief-of-staff-engine) is a separate, optional Python memory engine. My own daily system runs on plain markdown without it.
+**Companion tools, in their own repos.** I designed both of these tools specifically to keep Chief of Staff v2 lean and functional. [BloatBot](https://github.com/jdpolasky/bloatbot) audits your AI workspace: finds the bloat, proposes the cuts, touches nothing without your go. [BuildBot](https://github.com/jdpolasky/buildbot) builds the agents, skills, and tools your setup grows by: interviews you, blueprints on one page, builds only what you approved, proves it while you watch. Neither is required to run the chief of staff. [ai-chief-of-staff-engine](https://github.com/jdpolasky/ai-chief-of-staff-engine) is a separate, optional Python memory engine. My own daily system runs on plain markdown without it.
 
 Install steps are in the setup files, not here. This README is the description and the map.
 

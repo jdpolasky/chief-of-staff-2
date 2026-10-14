@@ -1,6 +1,6 @@
 # Setup guide (for humans)
 
-*Last verified September 2026.*
+*Last verified October 2026.*
 
 > **Note:** This is written for people who have never opened a terminal or installed a code project. If you've done that before, skim ahead. Nothing here will gatekeep you out.
 
@@ -18,9 +18,9 @@ You need three things. Two are free, one needs a paid plan.
 Download: https://obsidian.md
 After installing, open Obsidian and create a new vault. A vault is just a folder where Obsidian keeps your notes. Pick a name you'll remember and let Obsidian put it somewhere findable, like your Documents folder. You don't need to add any notes yet.
 
-**2. A current-generation agentic AI with file access.** This means an AI that can read and write files on your own computer, not just chat in a browser tab. Use Claude Code, OpenAI's Codex CLI, or another agent that reads AGENTS.md and can read and write local files. Claude Code is the one this was tested on end to end. Any paid tier of one of these works. Free tiers usually cannot run these tools.
+**2. A current-generation agentic AI with file access.** This means an AI that can read and write files on your own computer, which a chat in a browser tab can't do. Use Claude Code, OpenAI's Codex CLI, or another agent that reads AGENTS.md and can read and write local files. Claude Code is the one this was tested on end to end. Any paid tier of one of these works. Free tiers usually cannot run these tools.
 
-Install it now, following its own page: [Claude Code](https://code.claude.com/docs/en/setup) or [Codex CLI](https://developers.openai.com/codex/cli). The first time you start it, it asks you to log in. For Claude Code, run `claude` and follow the browser prompts. For Codex, run `codex` and choose Sign in with ChatGPT. Do this once before Step 1 so the login is out of the way.
+Install it now, following its own page: [Claude Code](https://code.claude.com/docs/en/setup) or [Codex CLI](https://learn.chatgpt.com/docs/codex/cli). The first time you start it, it asks you to log in. For Claude Code, run `claude` and follow the browser prompts. For Codex, run `codex` and choose Sign in with ChatGPT. Do this once before Step 1 so the login is out of the way.
 
 You don't need to connect your vault to the AI over MCP (a plug-in link between Obsidian and your AI). The AI reads and writes your notes as plain files. If you want that link later, [`obsidian-setup.md`](obsidian-setup.md) walks through it.
 
@@ -84,7 +84,7 @@ Open Obsidian. You should see a `Chief of Staff` folder with a core file, a rout
 
 The most common failure is a wrong vault path in the binding file. If your AI says it can't find the Chief of Staff folder, double check the path you put in for `{{VAULT_PATH}}` matches exactly what Obsidian shows you under "Show in folder."
 
-If the terminal says `command not found`, `'claude' is not recognized`, or the same for `codex`, the install didn't finish or the terminal can't see it yet. Close the terminal, open a new one, and try again. If it still fails, see [Claude Code's troubleshooting page](https://code.claude.com/docs/en/troubleshoot-install) or redo the install steps on the [Codex CLI page](https://developers.openai.com/codex/cli).
+If the terminal says `command not found`, `'claude' is not recognized`, or the same for `codex`, the install didn't finish or the terminal can't see it yet. Close the terminal, open a new one, and try again. If it still fails, see [Claude Code's troubleshooting page](https://code.claude.com/docs/en/troubleshoot-install) or redo the install steps on the [Codex CLI page](https://learn.chatgpt.com/docs/codex/cli).
 
 ## What to expect
 
