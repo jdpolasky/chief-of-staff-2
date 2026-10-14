@@ -6,7 +6,7 @@ This document is about what happened next. The public version one stayed a start
 
 The short version is the [README](README.md). This is the long version, for readers who want the bones before or after they install anything.
 
-## What v1 got right
+## What my first build got right
 
 Three things, and they all carried forward untouched.
 

@@ -4,11 +4,11 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/jdpolasky/chief-of-staff-2)](https://github.com/jdpolasky/chief-of-staff-2/stargazers) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-An AI chief of staff that keeps track of your calendar, your commitments, and how you like to work, and hands you a short brief every morning so nothing important slips. It lives in an Obsidian vault as plain markdown files you can open and read, and it runs on whatever AI you're paying for this year. I built it for my own ADHD, with no coding background, and I use it every day.
+An AI chief of staff that keeps track of your calendar, your commitments, and how you like to work, and hands you a short brief every morning so nothing important slips. It lives in an Obsidian vault as plain markdown files you can open and read, and it's built on Claude Code and should work with other AI tools that can read and write files. I built it for my own ADHD, with no coding background, and I use it every day.
 
 ![A sample morning brief for a fictional user](assets/sample-brief.png)
 
-This is version two. My own system grew too big and had to be torn down; that story is [below](#what-happened-to-version-one). The original public starter template, [`ai-chief-of-staff`](https://github.com/jdpolasky/ai-chief-of-staff), is archived.
+This is version two. My own system grew too big and had to be torn down; I tell that story [below](#what-happened-to-version-one). The original public starter template, [`ai-chief-of-staff`](https://github.com/jdpolasky/ai-chief-of-staff), is archived.
 
 ## What this is, in plain terms
 
@@ -92,14 +92,14 @@ It works without ADHD too.
 - [`obsidian-setup.md`](obsidian-setup.md). How to connect your vault to an AI agent over MCP. Covers Claude Code, Codex, Cursor, and any other MCP client. Optional.
 - [`docs/notion-vs-obsidian.md`](docs/notion-vs-obsidian.md). Short read on why this runs on Obsidian rather than Notion.
 - [`docs/notion-vs-obsidian-deep.md`](docs/notion-vs-obsidian-deep.md). The full analysis, with pricing.
-- [`ARCHITECTURE.md`](ARCHITECTURE.md). The bones. What v1 got right, how it died, what replaced it, and why every piece is shaped the way it is. Read this if you want the system explained before you commit to it.
+- [`ARCHITECTURE.md`](ARCHITECTURE.md). The bones. What my first build got right, how it died, what replaced it, and why every piece is shaped the way it is. Read this if you want the system explained before you commit to it.
 - [`vault-template/`](vault-template). The starter vault. The core register, the router skill, the source sheet, and the three universal skills.
 - [`c-suite/`](c-suite). The chairs. Career Coach, Planner, Health, Money, Physical Plant. Each ships as a Skill and a Source; the full four-part anatomy is in [`docs/anatomy.md`](docs/anatomy.md).
 - [`bindings/`](bindings). Thin adapters for whatever AI harness you run. `CLAUDE.md` for Claude Code, `AGENTS.md` for the other CLI agents, notes for everything else.
 - [`docs/laws.md`](docs/laws.md). Thirteen laws that govern the machinery, each one with the mistake that produced it.
 - [`CHANGELOG.md`](CHANGELOG.md). What changed and when.
 
-**Companion tools, in their own repos.** I designed both of these tools for Chief of Staff v2. BloatBot keeps it lean. BuildBot builds the new parts. [BloatBot](https://github.com/jdpolasky/bloatbot) audits your AI workspace: finds the bloat, proposes the cuts, touches nothing without your go. [BuildBot](https://github.com/jdpolasky/buildbot) builds the agents, skills, and tools your setup grows by: interviews you, blueprints on one page, builds only what you approved, proves it while you watch. Neither is required to run the chief of staff. [ai-chief-of-staff-engine](https://github.com/jdpolasky/ai-chief-of-staff-engine) is a separate, optional Python memory engine. My own daily system runs on plain markdown without it.
+**Companion tools, in their own repos.** I designed both of these tools for Chief of Staff v2. [BloatBot](https://github.com/jdpolasky/bloatbot) audits your AI workspace: finds the bloat, proposes the cuts, touches nothing without your go. [BuildBot](https://github.com/jdpolasky/buildbot) builds the agents, skills, and tools your setup grows by: interviews you, blueprints on one page, builds only what you approved, proves it while you watch. Neither is required to run the chief of staff. [ai-chief-of-staff-engine](https://github.com/jdpolasky/ai-chief-of-staff-engine) is a separate, optional Python memory engine. My own daily system runs on plain markdown without it.
 
 ## Install
 
@@ -122,7 +122,7 @@ claude --add-dir "<vault path>"
 
 Then say `read SETUP-AI.md and set me up`. It asks a few short questions, builds out your Chief of Staff folder, and finishes by showing you a working morning brief.
 
-Connecting Obsidian to your AI over MCP is optional; the guide is [`obsidian-setup.md`](obsidian-setup.md). Wondering whether Notion could do this instead? Read [`docs/notion-vs-obsidian.md`](docs/notion-vs-obsidian.md).
+Connecting Obsidian to your AI through MCP (a plug-in link between the two) is optional; the guide is [`obsidian-setup.md`](obsidian-setup.md). Wondering whether Notion could do this instead? Read [`docs/notion-vs-obsidian.md`](docs/notion-vs-obsidian.md).
 
 ## What it costs
 

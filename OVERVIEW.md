@@ -34,7 +34,7 @@ This is chapter two. Version one (`jdpolasky/ai-chief-of-staff`) went public in 
 
 ## Companion tools
 
-Two standalone agents live beside this repo. BloatBot keeps it lean. BuildBot builds the new parts. `jdpolasky/bloatbot` audits an AI workspace and proposes cuts without touching anything; `jdpolasky/buildbot` builds new agents, skills, and tools from a ratified one-page blueprint and proves them end to end. Neither is required to run the chief of staff.
+Two standalone agents live beside this repo. `jdpolasky/bloatbot` audits an AI workspace and proposes cuts without touching anything; `jdpolasky/buildbot` builds new agents, skills, and tools from a ratified one-page blueprint and proves them end to end. Neither is required to run the chief of staff.
 
 `jdpolasky/ai-chief-of-staff-engine` is a separate, optional Python memory engine. The author's own daily system runs on plain markdown without it.
 
