@@ -1,3 +1,5 @@
 .obsidian/workspace*.json
 .trash/
 .DS_Store
+/CLAUDE.md
+/AGENTS.md
