@@ -120,7 +120,7 @@ Thirteen laws govern the machinery. Each one exists because of a real mistake, o
 
 Two of them, plus the coda that closes the list, summarized here:
 
-**The coda: retire what you don't need instead of watching it.** If something breaks quietly and nobody misses it, retire it to the archive instead of monitoring it. This idea is what killed most of my private v1 build. The instinct when a job fails silently is to add an alert. The alert is a new thing to maintain, protecting a thing whose absence you could not feel. The jobs you decide to keep fall under law five instead, and each carries a heartbeat so you can see it ran.
+**The coda: retire what you don't need instead of watching it.** If something breaks quietly and nobody misses it, retire it to the archive instead of monitoring it. This idea is what killed most of my private build. The instinct when a job fails silently is to add an alert. The alert is a new thing to maintain, protecting a thing whose absence you could not feel. The jobs you decide to keep fall under law five instead, and each carries a heartbeat so you can see it ran.
 
 **Routine work is done with code. The model makes the judgments.** Anything with one correct answer should be deterministic. Anything requiring a read on your situation goes to the model. Confusing the two is how you get expensive scripts and unreliable judgment at the same time.
 
@@ -144,7 +144,7 @@ It means no service can deprecate you. No terms-of-service change touches your n
 
 This one is new, and it is the direct lesson of v1.
 
-Version one was built into a specific AI product, using that product's memory, that product's hooks, that product's scheduler. That coupling produced most of the machinery that later had to be torn out. It also meant that a model switch would have been a rebuild.
+My private build was tied to a specific AI product, using that product's memory, that product's hooks, that product's scheduler. That coupling produced most of the machinery that later had to be torn out. It also meant that a model switch would have been a rebuild.
 
 The models are moving fast and the leader changes. Betting the whole system on one of them is a bet you have to keep re-winning. Keeping the canon in pure markdown means the bet never has to be placed. You run whatever is best this quarter, point a thin adapter at the same vault, and nothing about your life needs migrating.
 

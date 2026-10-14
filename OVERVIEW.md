@@ -14,7 +14,7 @@ The system splits into canon and adapter. Canon is the vault: a core register (w
 
 The adapter is the `bindings/` folder: one small file per AI harness (`CLAUDE.md` for Claude Code, `AGENTS.md` for agent CLIs that read that convention) that only points at the vault and says nothing about the person. If every AI model on earth vanished, the vault would still be readable by a human. If you switch models, you lose nothing, because nothing meaningful ever lived on the model's side.
 
-Routine, deterministic work is handled with code. The model is reserved for judgment calls. Thirteen laws in `docs/laws.md` govern the machinery, each one written after a real mistake, or one that would have happened. A coda after the laws holds the idea that killed most of the author's private v1 build: if something breaks quietly and nobody misses it, retire it to an archive instead of monitoring it. Jobs you choose to keep carry a heartbeat, per law five.
+Routine, deterministic work is handled with code. The model is reserved for judgment calls. Thirteen laws in `docs/laws.md` govern the machinery, each one written after a real mistake, or one that would have happened. A coda after the laws holds the idea that killed most of the author's private build: if something breaks quietly and nobody misses it, retire it to an archive instead of monitoring it. Jobs you choose to keep carry a heartbeat, per law five.
 
 ## Who it serves
 
@@ -30,11 +30,13 @@ Clone the repo. Copy `vault-template/` into your Obsidian vault, then copy in wh
 
 ## Relation to v1
 
-This is chapter two. Version one (`jdpolasky/ai-chief-of-staff`) went public in spring 2026 as a starter template, worked, and was used daily on real work. The author's private build behind it grew into a five-thousand-file engine with memory tiers, hooks on every seam of the session, and scheduled jobs that could fail silently for days without anyone noticing. It was torn down to the studs in July 2026. V2 is the current version and is smaller by an order of magnitude. V1 is no longer maintained.
+This is chapter two. Version one (`jdpolasky/ai-chief-of-staff`) went public in spring 2026 as a starter template, worked, and was used daily on real work. The author's private build behind it grew into a five-thousand-file engine with memory tiers, hooks on every seam of the session, and scheduled jobs that could fail silently for days without anyone noticing. It was torn down to the studs in July 2026. V2 is the current version and is smaller than that private build by an order of magnitude. V1 is no longer maintained.
 
 ## Companion tools
 
-Two standalone agents live beside this repo and are built to keep it small. `jdpolasky/bloatbot` audits an AI workspace and proposes cuts without touching anything; `jdpolasky/buildbot` builds new agents, skills, and tools from a ratified one-page blueprint and proves them end to end. Neither is required to run the chief of staff.
+Two standalone agents live beside this repo. BloatBot keeps it lean. BuildBot builds the new parts. `jdpolasky/bloatbot` audits an AI workspace and proposes cuts without touching anything; `jdpolasky/buildbot` builds new agents, skills, and tools from a ratified one-page blueprint and proves them end to end. Neither is required to run the chief of staff.
+
+`jdpolasky/ai-chief-of-staff-engine` is a separate, optional Python memory engine. The author's own daily system runs on plain markdown without it.
 
 ## For AI agents
 

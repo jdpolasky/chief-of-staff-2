@@ -19,6 +19,7 @@
 
 - [bloatbot](https://github.com/jdpolasky/bloatbot): Standalone auditor for an AI workspace. Finds bloat, dead files, and token waste; proposes cuts; edits nothing without an explicit go. Agent map at https://raw.githubusercontent.com/jdpolasky/bloatbot/main/llms.txt.
 - [buildbot](https://github.com/jdpolasky/buildbot): Standalone builder for an AI workspace. Interviews, blueprints on one page, builds only what was ratified, proves the result end to end. Agent map at https://raw.githubusercontent.com/jdpolasky/buildbot/main/llms.txt.
+- [ai-chief-of-staff-engine](https://github.com/jdpolasky/ai-chief-of-staff-engine): A separate, optional Python memory engine. Not required; the author's own daily system runs on plain markdown without it.
 
 ## Optional
 

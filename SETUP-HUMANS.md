@@ -8,7 +8,7 @@
 
 This repo is the vault template and starter chairs for a Chief of Staff system: a folder of plain markdown notes plus a router file that tells an AI agent how to use them. You copy the notes into your own Obsidian vault, point an AI agent at them, and it sets the rest up with you.
 
-It is not tied to one AI company. Any current-generation agentic AI that can read and write files on your computer will work.
+It is not tied to one AI company. Claude Code is tested; others should work through their binding file.
 
 ## Before you start
 
