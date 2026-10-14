@@ -18,7 +18,11 @@ You need three things. Two are free, one needs a paid plan.
 Download: https://obsidian.md
 After installing, open Obsidian and create a new vault. A vault is just a folder where Obsidian keeps your notes. Pick a name you'll remember and let Obsidian put it somewhere findable, like your Documents folder. You don't need to add any notes yet.
 
-**2. A current-generation agentic AI with file access.** This means an AI that can read and write files on your own computer, not just chat in a browser tab. As of this writing, the real options are Claude Code, OpenAI's Codex CLI, and Gemini CLI, or any similar agent that can read and write local files. Any paid tier of one of these works. Free tiers usually cannot run these tools.
+**2. A current-generation agentic AI with file access.** This means an AI that can read and write files on your own computer, not just chat in a browser tab. Use Claude Code, OpenAI's Codex CLI, or another agent that reads AGENTS.md and can read and write local files. Claude Code is the one this was tested on end to end. Any paid tier of one of these works. Free tiers usually cannot run these tools.
+
+Install it now, following its own page: [Claude Code](https://code.claude.com/docs/en/setup) or [Codex CLI](https://developers.openai.com/codex/cli). The first time you start it, it asks you to log in. For Claude Code, run `claude` and follow the browser prompts. For Codex, run `codex` and choose Sign in with ChatGPT. Do this once before Step 1 so the login is out of the way.
+
+You don't need to connect your vault to the AI over MCP (a plug-in link between Obsidian and your AI). The AI reads and writes your notes as plain files. If you want that link later, [`obsidian-setup.md`](obsidian-setup.md) walks through it.
 
 **3. Git.** This is a tool that lets you download code projects from the internet. Many computers don't have it installed by default.
 Download: https://git-scm.com/downloads
@@ -57,14 +61,14 @@ This file is small on purpose. It just tells your AI where your vault is and wha
 
 If you don't know your vault's exact path, open Obsidian, right-click your vault name in the sidebar, and choose "Show in folder." That's the path.
 
-**Step 6. Launch your AI from inside the `chief-of-staff-2` folder.** If your AI isn't installed yet, here are the install instructions for [Claude Code](https://code.claude.com/docs/en/setup) and [Codex CLI](https://github.com/openai/codex).
+**Step 6. Launch your AI from inside the `chief-of-staff-2` folder.** If your AI isn't installed yet, go back to "Before you start" and install it first.
 
-For Claude Code, type these two lines into the terminal, pressing Enter after each:
+For Claude Code, type these two lines into the terminal, pressing Enter after each. Put your vault's full path in place of `<vault path>`, keeping the quote marks:
 
     cd chief-of-staff-2
-    claude
+    claude --add-dir "<vault path>"
 
-The first line moves the terminal into the folder you downloaded in Step 2. The second starts Claude Code there. Other AI tools start from the same folder with their own command. Launch from this folder every time you use your Chief of Staff, since that's where the binding file lives.
+The first line moves the terminal into the folder you downloaded in Step 2. The second starts Claude Code there and gives it permission to read and edit files in your vault folder too. For Codex, the second line is `codex --add-dir "<vault path>"`. Other AI tools start from the same folder with their own command. Launch from this folder every time you use your Chief of Staff, since that's where the binding file lives.
 
 Once your AI is running, say:
 
@@ -79,6 +83,8 @@ Open Obsidian. You should see a `Chief of Staff` folder with a core file, a rout
 ## Troubleshooting
 
 The most common failure is a wrong vault path in the binding file. If your AI says it can't find the Chief of Staff folder, double check the path you put in for `{{VAULT_PATH}}` matches exactly what Obsidian shows you under "Show in folder."
+
+If the terminal says `command not found`, `'claude' is not recognized`, or the same for `codex`, the install didn't finish or the terminal can't see it yet. Close the terminal, open a new one, and try again. If it still fails, see [Claude Code's troubleshooting page](https://code.claude.com/docs/en/troubleshoot-install) or redo the install steps on the [Codex CLI page](https://developers.openai.com/codex/cli).
 
 ## What to expect
 
