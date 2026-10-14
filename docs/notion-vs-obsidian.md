@@ -2,7 +2,7 @@
 
 *Last verified August 2026.*
 
-*Part of the [chief-of-staff-2](https://github.com/jdpolasky/chief-of-staff-2) repo. For the full technical analysis with receipts, see [notion-vs-obsidian-deep](notion-vs-obsidian-deep.md).*
+*Part of the [chief-of-staff-2](https://github.com/jdpolasky/chief-of-staff-2) repo. For the full technical analysis, see [notion-vs-obsidian-deep](notion-vs-obsidian-deep.md).*
 
 ---
 
@@ -87,6 +87,6 @@ Personal CoS on Obsidian. Company layer on Notion. Claude bridging both. That's 
 
 ---
 
-For the full analysis, including pricing breakdowns, business model comparison, migration risk, privacy architecture, and the live test results, see [notion-vs-obsidian-deep](notion-vs-obsidian-deep.md).
+For the full analysis, including pricing breakdowns, business model comparison, migration risk, and privacy architecture, see [notion-vs-obsidian-deep](notion-vs-obsidian-deep.md).
 
 Questions and pushback welcome. Find me on [TikTok @chasinggnosis](https://www.tiktok.com/@chasinggnosis) or in the [Discord](https://discord.gg/YhhpMNtj4r).
