@@ -15,3 +15,7 @@ A chair is a focused agent with one job: a role paragraph, a scope of what it ow
 **To retire a chair:** move its folder into `Chief of Staff/CoS Archive/` with the date, and remove it from the roster line in `CoS Skill`. Don't delete it. A retired chair is history, not garbage.
 
 The five chairs here, Career Coach, Planner, Health, Money, and Physical Plant, are examples, not a required set. Rename them, merge them, split them, or invent entirely new ones for whatever your life actually needs. The only fixed part is the anatomy: a Skill and a Source, scoped clearly, wired to the rest.
+
+## Who made this
+
+Built by Joshua Polasky, a strategy and operations consultant. Business first, then AI. If you're an owner or leader who wants help figuring out where AI fits in your business, get in touch: joshua.polasky@gmail.com or [LinkedIn](https://linkedin.com/in/joshuapolasky).
