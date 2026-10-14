@@ -69,7 +69,7 @@ Use both.
 
 Obsidian for your personal layer: memory files, session logs, task system, strategic thinking. This is where Claude lives and reads and writes. It's yours, it's local, it compounds over time.
 
-Notion for your client or team layer: shared project space, collaborative docs, client-facing materials. Claude can read Notion via MCP just like it reads your vault.
+Notion for your client or team layer: shared project space, collaborative docs, client-facing materials. Claude can read and write Notion through its MCP server, the same way it works with your vault.
 
 Personal CoS on Obsidian. Company layer on Notion. Claude bridging both. That's the architecture that makes the most sense for a consultant or small team, and almost nobody has written about it because almost nobody has built it.
 
