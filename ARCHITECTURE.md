@@ -116,7 +116,7 @@ The cost of this design is that it asks more of the model at runtime. There is n
 
 ## The laws
 
-Thirteen laws govern the machinery. Each one exists because the same mistake happened at least twice, and each one is written up in [`docs/laws.md`](docs/laws.md) alongside the failure that produced it. Reading that page is the fastest way to understand why the system is shaped this way.
+Thirteen laws govern the machinery. Each one exists because of a real mistake, or one that would have happened, and each one is written up in [`docs/laws.md`](docs/laws.md) alongside the failure that produced it. Reading that page is the fastest way to understand why the system is shaped this way.
 
 Two of them, plus the coda that closes the list, summarized here:
 

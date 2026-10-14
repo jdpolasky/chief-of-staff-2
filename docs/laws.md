@@ -82,7 +82,7 @@ Never park a finished piece of work waiting on review that never comes. If a ste
 
 ---
 
-## Subtraction over surveillance
+## Retire it instead of watching it
 
 When something breaks quietly and nobody misses it, retire it to the archive folder, per law nine, instead of adding monitoring for it. The same goes for any part that needs watching and isn't earning its place. It moves to the archive, where it stops running but stays recoverable.
 

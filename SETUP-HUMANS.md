@@ -18,7 +18,7 @@ You need three things. Two are free, one needs a paid plan.
 Download: https://obsidian.md
 After installing, open Obsidian and create a new vault. A vault is just a folder where Obsidian keeps your notes. Pick a name you'll remember and let Obsidian put it somewhere findable, like your Documents folder. You don't need to add any notes yet.
 
-**2. A current-generation agentic AI with file access.** This means an AI that can read and write files on your own computer, which a chat in a browser tab can't do. Use Claude Code, OpenAI's Codex CLI, or another agent that reads AGENTS.md and can read and write local files. Claude Code is the one this was tested on end to end. Any paid tier of one of these works. Free tiers usually cannot run these tools.
+**2. A current-generation agentic AI with file access.** This means an AI that can read and write files on your own computer, which a chat in a browser tab can't do. Use Claude Code, OpenAI's Codex CLI, or another agent that reads AGENTS.md and can read and write local files. Claude Code is the one this was built on. Any paid tier of one of these works. Free tiers usually cannot run these tools.
 
 Install it now, following its own page: [Claude Code](https://code.claude.com/docs/en/setup) or [Codex CLI](https://learn.chatgpt.com/docs/codex/cli). The first time you start it, it asks you to log in. For Claude Code, run `claude` and follow the browser prompts. For Codex, run `codex` and choose Sign in with ChatGPT. Do this once before Step 1 so the login is out of the way.
 
