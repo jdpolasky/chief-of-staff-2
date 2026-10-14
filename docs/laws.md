@@ -82,8 +82,8 @@ Never park a finished piece of work waiting on review that never comes. If a ste
 
 ---
 
-## Subtraction over surveillance
+## Retire it instead of watching it
 
-When something breaks quietly and nobody misses it, that's a signal to remove it, not to add monitoring for it. Not everything that goes silent needs to be watched more closely. Some of it needs to not exist.
+When something breaks quietly and nobody misses it, retire it to the archive folder, per law nine, instead of adding monitoring for it. The same goes for any part that needs watching and isn't earning its place. It moves to the archive, where it stops running but stays recoverable.
 
 *Origin: a broken check got instrumented with more alerts instead of being asked why anyone needed it in the first place. The answer was that nobody did.*

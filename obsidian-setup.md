@@ -1,10 +1,14 @@
 # Wiring Obsidian to your AI
 
-*Last updated September 2026.*
+*Last updated October 2026.*
 
 This is the connection guide. It gets your Obsidian vault talking to an AI agent, so the agent can read and write your notes directly instead of you copying and pasting. Once this is done, your Chief of Staff can actually live in your vault. Setting up the Chief of Staff system itself is a separate step, covered in [`SETUP-HUMANS.md`](SETUP-HUMANS.md).
 
-The whole thing rests on one idea. Your vault runs a small server that speaks a common language called MCP, the Model Context Protocol. Any AI agent that speaks MCP can connect to that one server. Claude Code, Codex, Gemini, and the rest all connect the same way. Only the line you paste into each one is different.
+This connection is optional. The Chief of Staff system works without it, because your AI can read and write the vault as plain files. Set this up if you want the extra search and note tools it gives your AI.
+
+One privacy note. The connection itself stays on your machine, but whatever your AI reads from your vault goes to the AI vendor, the same as anything else you type to it, unless you run a local model.
+
+The whole thing rests on one idea. Your vault runs a small server that speaks a common language called MCP, the Model Context Protocol. Any AI agent that speaks MCP can connect to that one server. Claude Code, Codex, Cursor, and the rest all connect the same way. Only the line you paste into each one is different.
 
 A word on models, since this is meant to work with any of them. An open model like Llama or Qwen running on your own machine does not talk to your vault by itself. The agent program wrapped around the model does that part. So when you read that this works with open models, what it means is that the agent you run can be pointed at an open model as its brain, and the vault connection is the same either way.
 
@@ -13,16 +17,16 @@ A word on models, since this is meant to work with any of them. An open model li
 Three things, all but one of them free.
 
 1. **Obsidian**, the notes app your vault lives in. Free, from [obsidian.md](https://obsidian.md). Install it and create a vault, which is just a folder where Obsidian keeps your notes. You do not need any notes in it yet.
-2. **An AI agent that can read and write files on your computer.** Claude Code is the one this project is built around and the one these instructions treat as the default. Codex CLI, Gemini CLI, and several others work too, and they each get their own line below. A paid plan is the one real cost here; the free tiers usually cannot run these agents.
+2. **An AI agent that can read and write files on your computer.** Claude Code is the one this project is built around and the one these instructions treat as the default. OpenAI's Codex CLI and Cursor work too, and each gets its own section below. A paid plan is the one real cost here; the free tiers usually cannot run these agents.
 3. **A few minutes.** That is the whole install.
 
 ## Step one: the vault side
 
 This part is the same no matter which AI you use. You do it once.
 
-**Install the connector plugin.** In Obsidian, open Settings, then Community plugins, then Browse. Search for **MCP Connector** by Stefano Ferri and install it. Turn it on. This plugin runs a small MCP server inside Obsidian itself, on your own machine, with its own on-device search. Nothing leaves your computer. It is the maintained successor to an older plugin called MCP Tools, which was archived in May 2026, so if an older guide points you at MCP Tools, this is what replaced it.
+**Install the connector plugin.** In Obsidian, open Settings, then Community plugins, then Browse. Search for **MCP Connector** by Stefano Ferri and install it. Turn it on. This plugin runs a small MCP server inside Obsidian itself, on your own machine, with its own on-device search. The server and its search run on your machine. It is the maintained successor to an older plugin called MCP Tools, which was archived in May 2026, so if an older guide points you at MCP Tools, this is what replaced it.
 
-**Find the address.** Once the plugin is on, it serves at `http://127.0.0.1:27200/mcp`. If that port is busy it takes the next free one up to 27205, and it shows you the live address in its settings. That address is local to your machine and reachable by nothing outside it.
+**Find the address.** Once the plugin is on, its settings show the address it's serving at. The usual one is `http://127.0.0.1:27200/mcp`, but copy the exact address shown in your settings and use that wherever this guide shows the usual one. That address is local to your machine and reachable by nothing outside it. Tested with MCP Connector 3.0.2, October 2026.
 
 **Make a token.** In the plugin's settings, open the Access control panel and create a token. Copy it somewhere safe for the next step. Treat it like a password and never paste it into a note. You can make a separate token for each agent you connect, up to ten.
 
@@ -38,7 +42,7 @@ That is the vault side finished. The server is running and you have a token.
 
 ## Step two: connect your AI
 
-Pick your agent. You need the address from step one, `http://127.0.0.1:27200/mcp`, and your token.
+Pick your agent. You need the address from step one (usually `http://127.0.0.1:27200/mcp`) and your token. If your settings show a different address, use yours in place of the usual one below.
 
 ### Claude Code
 
@@ -61,23 +65,6 @@ bearer_token_env_var = "OBSIDIAN_TOKEN"
 ```
 
 Codex reads the token from an environment variable, so set `OBSIDIAN_TOKEN` to your token in your shell rather than writing the token into the file. Codex speaks HTTP directly, so no bridge is needed.
-
-### Gemini CLI
-
-Open `~/.gemini/settings.json` and add your server under `mcpServers`:
-
-```json
-{
-  "mcpServers": {
-    "obsidian": {
-      "httpUrl": "http://127.0.0.1:27200/mcp",
-      "headers": { "Authorization": "Bearer YOUR_TOKEN" }
-    }
-  }
-}
-```
-
-Gemini uses `httpUrl` for this kind of connection. Its plain `url` field means something else.
 
 ### Cursor
 
@@ -112,7 +99,7 @@ Start your agent and ask it to list the files in your vault, or to read one note
 
 - Obsidian has to be running, with the MCP Connector plugin on. The server lives inside the app.
 - A wrong or expired token gives an authorization error. Recopy it from the plugin's Access control panel.
-- If the port was busy, your live address may not be 27200. Check the plugin settings for the real one and update your agent's config to match.
+- If your agent's config doesn't use the exact address shown in the plugin settings, update it to match.
 - Very large notes stop at about 100 KB on a full read. The agent can still read them in parts, and it will tell you when it needs to.
 
 ## An alternative for Claude users

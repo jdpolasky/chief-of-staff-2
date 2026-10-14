@@ -11,6 +11,10 @@ related: "[[Health Skill]]"
 
 Current health patterns and upcoming appointments for {{user}}. Updated by dated entry, newest first. Older entries stay in place as history; add new ones rather than editing past entries.
 
+## Where things stand
+
+{{where things stand}}
+
 ## Upcoming appointments
 
 - {{provider type or purpose}} - {{date}} - prep questions: {{short list or "none yet"}}

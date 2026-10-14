@@ -1,7 +1,7 @@
 ---
 title: C-Suite README
-created: {{date}}
-type: source
+created: 2026-08-07
+type: catalog
 owner: Physical Plant
 tags: [c-suite, readme]
 ---
@@ -12,6 +12,10 @@ A chair is a focused agent with one job: a role paragraph, a scope of what it ow
 
 **To adopt a chair:** copy its folder into your vault's `Chief of Staff/C-Suite/`, open both files, and fill in every `{{placeholder}}`. Add the chair's name to the roster line in your `CoS Skill` note so the router knows it exists. That's it, the chair is live. One special case: if you adopt Physical Plant, also copy `docs/laws.md` from this repo into your `Chief of Staff/` folder, because that chair points to it as its governing law set.
 
-**To retire a chair:** move its folder into an Archive location with the date, and remove it from the roster line in `CoS Skill`. Don't delete it. A retired chair is history, not garbage.
+**To retire a chair:** move its folder into `Chief of Staff/CoS Archive/` with the date, and remove it from the roster line in `CoS Skill`. Don't delete it. A retired chair is kept as history.
 
 The five chairs here, Career Coach, Planner, Health, Money, and Physical Plant, are examples, not a required set. Rename them, merge them, split them, or invent entirely new ones for whatever your life actually needs. The only fixed part is the anatomy: a Skill and a Source, scoped clearly, wired to the rest.
+
+## Who made this
+
+Built by Joshua Polasky, a strategy and operations consultant. Business first, then AI. If you're an owner or leader who wants help figuring out where AI fits in your business, get in touch: joshua.polasky@gmail.com or [LinkedIn](https://linkedin.com/in/joshuapolasky).

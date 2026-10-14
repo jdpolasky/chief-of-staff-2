@@ -13,7 +13,7 @@ Captures the current chat, verbatim, to an Archive note in the owning chair. Fir
 ## What to do
 
 1. Identify the chair that owns this session's work. That's whose Archive the log goes into.
-2. Write the full chat, verbatim, into a new note in that chair's `Archive/` folder. If the chair has no Archive folder yet, create it.
+2. Write the full chat, verbatim, into a new note in that chair's archive folder, named `<Chair> Archive/` inside the chair's folder (for example `Chief of Staff/C-Suite/Planner/Planner Archive/`). If the chair has no archive folder yet, create it.
 3. Name the file with a dated filename: `YYYY-MM-DD Title.md`, where the title is a short, plain description of what the session was about.
 4. Give the note frontmatter (title, created, type, owner, tags) per house convention.
 5. Do not summarize, trim, or edit the content. Verbatim means verbatim.
@@ -22,7 +22,7 @@ Captures the current chat, verbatim, to an Archive note in the owning chair. Fir
 ## Rules
 
 - The note is write-once. Once logged, it is never edited again. It's a snapshot of that moment, not a living document.
-- If no chair clearly owns the session, it goes to the Chief seat's own Archive.
+- If no chair clearly owns the session, it goes to the Chief seat's own archive, `Chief of Staff/CoS Archive/`.
 
 ## Related
 

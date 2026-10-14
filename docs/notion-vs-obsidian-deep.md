@@ -22,7 +22,7 @@ Short answer: it depends on who you are. Long answer: below.
 
 **Obsidian** is a local-first markdown editor. Your notes are plain text files on your hard drive. The app reads them, connects them, and gets out of your way. There is no cloud by default. The company is small, bootstrapped, and has no outside investors to answer to. Revenue comes from optional sync and publish subscriptions. The core product is free.
 
-**Notion** is a cloud-based workspace. Your pages live on Notion's servers. It is a large, well-funded product backed by major venture capital, serving tens of millions of users including a large share of the Fortune 500. It is heading toward a public-market exit.
+**Notion** is a cloud-based workspace. Your pages live on Notion's servers. It is a large, well-funded product backed by major venture capital, serving tens of millions of users including a large share of the Fortune 500.
 
 These are not equivalent companies building equivalent tools for equivalent users. That context matters.
 
@@ -32,9 +32,9 @@ These are not equivalent companies building equivalent tools for equivalent user
 
 This gets overlooked in most comparisons, so let's address it directly.
 
-Obsidian's local-first architecture is not just a privacy feature. It's a business model. Because your files live on your machine, Obsidian's operational costs are near zero. They don't pay to store your data. That's why a small team can serve millions of users profitably with no outside capital. The absence of VC funding means no exit pressure, no quarterly growth targets, no incentive to monetize your data. The core product is free and likely stays that way.
+Obsidian's local-first architecture is also its business model. Because your files live on your machine, Obsidian's operational costs are near zero. They don't pay to store your data. That's why a small team can serve millions of users profitably with no outside capital. The absence of VC funding means no exit pressure, no quarterly growth targets, no incentive to monetize your data. The core product is free and likely stays that way.
 
-Notion's model is different. They are building toward a public market exit. Public companies answer to shareholders every quarter. That pressure flows downstream over time through pricing changes, feature paywalling, and data strategy. This is not a criticism. It's the rational behavior of a VC-backed company doing what VC-backed companies do. But if you're building an operating system you plan to use for the next decade, it's worth knowing who you're betting on.
+Notion's model is different. It's backed by venture capital, and venture investors expect growth. That pressure can flow downstream over time through pricing changes, feature paywalling, and data strategy. That's how VC-backed companies work. But if you're building an operating system you plan to use for the next decade, it's worth knowing who you're betting on.
 
 ---
 
@@ -124,7 +124,7 @@ Notion's privacy protections are solid for a cloud service. But there is a meani
 
 Obsidian has thousands of community plugins and hundreds of themes. The most-downloaded plugins (Excalidraw, Templater, Dataview, Tasks) each have millions of downloads. The plugin ecosystem updates constantly, with new releases and patches landing weekly. The r/ObsidianMD subreddit and the official Discord are both large and active.
 
-Notion has no plugin ecosystem. It is a closed platform with official connectors: Salesforce, Box, Slack, GitHub, and others. Deep customization in Notion is whatever Notion decides to build. Deep customization in Obsidian is whatever 2,754 developers have decided to build, which turns out to be a lot.
+Notion has no plugin ecosystem. It is a closed platform with official connectors: Salesforce, Box, Slack, GitHub, and others. Deep customization in Notion is whatever Notion decides to build. Deep customization in Obsidian is whatever Obsidian's plugin developers have decided to build, which turns out to be a lot.
 
 The Smart Connections plugin alone, which powers semantic search across your vault and surfaces non-obvious connections between notes, has no direct Notion equivalent. It is built on the same vector embedding technology that makes RAG systems work, applied to your personal knowledge base.
 
