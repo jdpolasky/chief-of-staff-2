@@ -2,7 +2,7 @@
 
 Every new conversation with a model starts from zero. It doesn't know who you are, what you're working on, or what you decided yesterday. Version one of this project solved that problem with a vault of markdown notes the model read at the start of every session. That part worked and is the whole reason any of this exists.
 
-This document is about what happened next. Version one grew, kept growing, and eventually collapsed under its own bloated weight. Version two is what I rebuilt from the wreckage.
+This document is about what happened next. The public version one stayed a starter template. My own private build of it grew, kept growing, and eventually collapsed under its own bloated weight. Version two is what I rebuilt from the wreckage.
 
 The short version is the [README](README.md). This is the long version, for readers who want the bones before or after they install anything.
 
@@ -18,7 +18,7 @@ Rules that came out of real friction instead of theory. The rule that the model 
 
 ## How it died
 
-It died of growth because every step of the growth looked like progress at the time.
+This section is about my private build, the system I ran every day behind the public template. It died of growth because every step of the growth looked like progress at the time.
 
 The memory layer started as three short files. It became tiers, with an index, with decay rules, with a firings log, with an audit command to read the firings log. The hook layer started as one script that injected today's date. It became a dozen scripts hanging off session start, session end, pre-compaction, and every tool call in between. Scheduled jobs fired in the morning whether I was there or not. Dashboards appeared to show me the state of the machinery. Logs accumulated that nobody opened.
 
@@ -28,13 +28,13 @@ The worst part was the silence. A job would fail, and nothing announced it, and 
 
 The other half was the maintenance. I was starting my mornings fixing the machine instead of doing my work. Fixing a hook. Pruning a memory file. Chasing an index that had drifted. This system was supposed to make my life easier, and now it was the opposite.
 
-Rule ten of the original set said the system may never become its own project. It became its own project. So I tore it down to the studs.
+Law ten says the system should never become a project in its own right. My build became its own project. So I tore it down to the studs.
 
 ## The subtraction rebuild
 
 The rebuild ran on a single question asked of every single piece: if this vanished tonight, would I even notice?
 
-Anything that failed that question got deleted rather than fixed. Not archived, not disabled, not wrapped in monitoring. Deleted. Monitoring a thing you don't need is how you end up with five thousand files.
+Anything that failed that question came out of the running system rather than getting fixed. It wasn't disabled or wrapped in monitoring. Going forward, retired parts move to an archive folder, per the museum law in [`docs/laws.md`](docs/laws.md), so they stop running but stay recoverable. Monitoring a thing you don't need is how you end up with five thousand files.
 
 Four commitments came out of it.
 
@@ -118,9 +118,9 @@ The cost of this design is that it asks more of the model at runtime. There is n
 
 Thirteen laws govern the machinery. Each one exists because the same mistake happened at least twice, and each one is written up in [`docs/laws.md`](docs/laws.md) alongside the failure that produced it. Reading that page is the fastest way to understand why the system is shaped this way.
 
-Three of the best, quoted here:
+Two of them, plus the coda that closes the list, quoted here:
 
-**If it breaks quietly and nobody misses it, delete it. Do not monitor it.** This is the law that killed most of v1. The instinct when a job fails silently is to add an alert. The alert is a new thing to maintain, protecting a thing whose absence you could not feel. Subtraction is cheaper and permanent.
+**The coda: subtraction over surveillance.** If something breaks quietly and nobody misses it, retire it to the archive instead of monitoring it. This idea is what killed most of my private v1 build. The instinct when a job fails silently is to add an alert. The alert is a new thing to maintain, protecting a thing whose absence you could not feel. Subtraction is cheaper. The jobs you decide to keep fall under law five instead, and each carries a heartbeat so you can see it ran.
 
 **Routine work is done with code. The model makes the judgments.** Anything with one correct answer should be deterministic. Anything requiring a read on your situation goes to the model. Confusing the two is how you get expensive scripts and unreliable judgment at the same time.
 
@@ -160,7 +160,7 @@ No web UI. No mobile app. No hosted service. Nothing runs on anybody else's comp
 
 No multi-user support. One vault, one person. Shared use would mean permissions, and permissions would mean a database, and a database would mean the semantic layer stops being readable.
 
-No scheduled jobs shipped by default. That is a direct scar from v1. If you want something to fire on a timer, wire it up yourself, and know that when it breaks quietly, noticing is on you.
+No scheduled jobs shipped by default. That is a direct scar from v1. If you want something to fire on a timer, wire it up yourself and give it a heartbeat, a visible sign that it ran, per law five in [`docs/laws.md`](docs/laws.md).
 
 No analytics, no telemetry, no phoning home. There is nowhere for it to phone.
 
@@ -170,9 +170,9 @@ Chapter one started in early 2024 with custom GPTs. They drifted, they forgot, a
 
 Chapter two is shorter and less flattering.
 
-The system went public and then it went feral. Every good idea I had became a file, then a folder, then a subsystem. Growth felt like progress because each addition was individually defensible. By July 2026 it was five thousand files, several of which had been broken for over a week without producing a single consequence I could point to, and I was spending my best hours of the day maintaining a machine whose job was to give me my best hours back.
+The template went public, and my private build behind it went feral. Every good idea I had became a file, then a folder, then a subsystem. Growth felt like progress because each addition was individually defensible. By July 2026 it was five thousand files, several of which had been broken for over a week without producing a single consequence I could point to, and I was spending my best hours of the day maintaining a machine whose job was to give me my best hours back.
 
-The teardown was one weekend and it was not gentle. I kept the register, the loop, three operating rules, and the idea of a vault. Everything else went in the bin, including work I was proud of. The rebuild that followed took a fraction of the time the original had, because subtraction turns out to be a much better way to build.
+The teardown was one weekend and it was not gentle. I kept the register, the loop, three operating rules, and the idea of a vault. Everything else came out of the running system, including work I was proud of. The rebuild that followed took a fraction of the time the original had, because subtraction turns out to be a much better way to build.
 
 What came back is smaller and cleaner, and works better than the first version ever did. 
 
