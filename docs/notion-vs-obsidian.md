@@ -1,6 +1,6 @@
 # I Built My AI Chief of Staff on Obsidian, but would Notion work? Here's an Analysis of Obsidian vs Notion.
 
-*Last verified August 2026.*
+*Last verified October 2026.*
 
 *Part of the [chief-of-staff-2](https://github.com/jdpolasky/chief-of-staff-2) repo. For the full technical analysis, see [notion-vs-obsidian-deep](notion-vs-obsidian-deep.md).*
 
@@ -33,9 +33,9 @@ Real-time collaboration. If more than one person needs to work in your system si
 
 Day one experience. Notion works when you open it. Drag, drop, done. My Obsidian system took months to build. That's not a bug, but it's the truth.
 
-Mobile. Notion's mobile app is polished and full-featured. Obsidian mobile works, but it requires setup and feels like a power tool, because it is.
+Mobile. Notion's mobile app is polished and full-featured, and Notion now has a separate iOS app for its agents. Obsidian mobile has caught up on capture (lock-screen quick capture, widgets, and voice notes with transcription all shipped this fall), but it still feels like a power tool, because it is.
 
-Database views. Six native views from the same data: table, board, calendar, timeline, gallery, list, plus relations and rollups that link databases together. A decade of polish behind them. Obsidian finally has a real answer here: Bases, a free built-in feature that turns the notes you already have into table, list, card, and map views with filters and formulas, on desktop and mobile. It closed more of this gap than I expected, but it has no relations or rollups. If you're running a CRM or content calendar with linked tables, Notion is still better today. If you need to see and sort your notes as a table, Obsidian now does that out of the box.
+Database views. Six native views from the same data: table, board, calendar, timeline, gallery, list, plus relations and rollups that link databases together. A decade of polish behind them. Obsidian finally has a real answer here: Bases, a free built-in feature that turns the notes you already have into table, list, card, kanban, and map views with filters and formulas. It closed more of this gap than I expected, but it has no relations or rollups. If you're running a CRM or content calendar with linked tables, Notion is still better today. If you need to see and sort your notes as a table, Obsidian now does that out of the box.
 
 Templates. Notion has a centralized marketplace with hundreds of ready-to-use systems. Obsidian templates live scattered across GitHub repos and forum posts.
 
@@ -43,21 +43,21 @@ Templates. Notion has a centralized marketplace with hundreds of ready-to-use sy
 
 ## Where the Architecture Breaks Down
 
-The difference is in how each AI reaches your content. Notion AI retrieves: it searches your workspace and pulls back what matches. Claude with direct file access reads: it loads your actual files into context. Notion has improved its workspace Q&A over time and added autonomous agents, but the underlying model is still search-and-retrieve, so it is strongest pulling from a page or a few and weaker when an answer needs synthesis across many pages at once.
+The difference is in how each AI reaches your content. Notion has moved fast here. Its agents can now work on a task for up to 24 hours, with their own computer and browser, and they can query databases directly. But they still reach your workspace through Notion's own search and query tools, inside Notion's servers. Claude with direct file access opens the actual files on your machine, as many as the job needs, the same way you would.
 
-For a Chief of Staff system that synthesis is the core use case. Cross-referencing your session history, your task list, your meeting notes, and your project status is what makes the system valuable, and reading across all of it beats searching it. That's a structural difference, not a feature gap that closes with the next update.
+For a Chief of Staff system, reading across everything is the core use case. Cross-referencing your session history, your task list, your meeting notes, and your project status is what makes the system valuable. Notion has narrowed this gap in 2026. The gap that remains is about where the files live and who controls them.
 
-The shift to agents widens this gap. An AI agent can live directly in a folder of plain markdown files: read them, write them, reorganize them, with no translation layer in between. To do the same work in Notion, the agent goes through Notion's API, where every page gets converted to and from Notion's block format on each trip. Plain files are turning out to be what agents work best in, and that argument gets stronger with every release cycle.
+The shift to agents still favors plain files. An AI agent can live directly in a folder of markdown files: read them, write them, reorganize them, with no translation layer in between. Notion's API now accepts and returns markdown, which helps a lot, but the pages are still stored in Notion's block format, very large pages get cut off, and some block types (bookmarks, embeds, link previews) don't come back as markdown at all. Plain files have none of those limits.
 
-There's also the migration question. If you've built a deep Obsidian system and want to move to Notion, budget time and expect to lose structure. Wikilinks, backlinks, and plugin metadata don't transfer cleanly. The reverse trip -- Notion to Obsidian -- is actually straightforward. The broader risk with Notion is format longevity: your content lives in a proprietary database, not plain text files, and complex pages don't always export cleanly to other tools. Obsidian files are readable in any text editor regardless of whether the app exists.
+There's also the migration question. If you've built a deep Obsidian system and want to move to Notion, budget time and expect to lose structure. Wikilinks, backlinks, and plugin metadata don't transfer cleanly. The reverse trip, Notion to Obsidian, is straightforward: Obsidian's official Importer plugin can pull your workspace straight through Notion's API. The broader risk with Notion is format longevity: your content lives in a proprietary database, not plain text files, and complex pages don't always export cleanly to other tools. Obsidian files are readable in any text editor regardless of whether the app exists.
 
 ---
 
 ## What Notion AI Actually Runs On
 
-This one is widely misunderstood. Notion AI is multi-model. Inside Notion you pick which frontier model answers: Claude, OpenAI's GPT, or Google's Gemini. Claude is one option on the menu, not the engine underneath, and Anthropic and Notion do have a real partnership. So the real framing is not that Notion is a Claude reseller. It is that Notion gives you a choice of models wrapped in its structure and workspace context.
+This one is widely misunderstood. Notion AI is multi-model. Inside Notion you pick from a short list of frontier models, Claude among them, or leave it on Auto and let Notion choose for each task. You can even connect a ChatGPT plan to your personal Notion agent. So Notion is no Claude reseller. It gives you a choice of models wrapped in its structure and workspace context.
 
-At the Business tier, about $20 per user per month, you get that model choice plus Notion's agents, with the most autonomous agent runs metered separately as credits. Or you pay Claude directly at $20 per month, get the full model with no per-action metering, and give it direct access to your entire file system with no intermediary.
+At the Business tier, listed at $20 per user per month, you get that model choice plus Notion's agents and a monthly allowance of AI credits, with heavier agent work billed as extra credits. Or you pay Claude directly at $20 per month ($17 billed annually), which now includes Claude Code, and give it direct access to your files with no intermediary.
 
 The question is whether Notion's structure and collaboration are worth the wrapper. For a team, often yes. For a solo operator building a personal CoS, usually not.
 
@@ -69,7 +69,7 @@ Use both.
 
 Obsidian for your personal layer: memory files, session logs, task system, strategic thinking. This is where Claude lives and reads and writes. It's yours, it's local, it compounds over time.
 
-Notion for your client or team layer: shared project space, collaborative docs, client-facing materials. Claude can read Notion via MCP just like it reads your vault.
+Notion for your client or team layer: shared project space, collaborative docs, client-facing materials. Claude can read and write Notion through Notion's official MCP connector, just like it works in your vault.
 
 Personal CoS on Obsidian. Company layer on Notion. Claude bridging both. That's the architecture that makes the most sense for a consultant or small team, and almost nobody has written about it because almost nobody has built it.
 
@@ -83,7 +83,7 @@ Personal CoS on Obsidian. Company layer on Notion. Claude bridging both. That's 
 
 **Consultant or small team:** Use both. Obsidian for your personal CoS, Notion for the client layer, Claude bridging them via MCP.
 
-**Already deep in Notion with years of data:** Stay in Notion, install the Notion MCP connector, and let Claude read your workspace. You'll get real improvement without migrating anything.
+**Already deep in Notion with years of data:** Stay in Notion, install the Notion MCP connector, and let Claude work in your workspace. You'll get real improvement without migrating anything.
 
 ---
 
